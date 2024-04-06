@@ -2,32 +2,92 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
+.howWeWork {
+  align-items: center;
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    152deg,
+    #000000 5.447531070579706%,
+    rgb(85, 40, 250) 15.659449038131465%,
+    rgb(59, 85, 255) 26.442849099099103%,
+    rgb(5, 105, 255) 35.622104062306335%,
+    rgb(145, 82, 255) 45.42335304054054%,
+    rgb(255, 28, 251) 56.007179054054056%,
+    rgb(255, 191, 248) 66.13377536048806%,
+    rgb(255, 255, 255) 77.69491768531825%
+  );
+}
+.container {
+  max-width: 1200px;
+}
+.pricing-text {
+  background: linear-gradient(
+    111deg,
+    rgb(64, 0, 255) 7.45883%,
+    rgb(255, 46, 46) 26.163%,
+    rgb(255, 51, 228) 61.4727%,
+    rgb(255, 201, 248) 84.6847%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.stackingCard {
+  transform: perspective(1200px) translateX(0px) translateY(0px) scale(0.95)
+    rotate(0deg) rotateX(0deg) rotateY(0deg) skewX(0deg) skewY(0deg)
+    translateZ(0px);
+  box-shadow: 0 -0.7836301510105841px 0.7836301510105841px -0.10714285714285714px
+      #4a4a4a0a,
+    0 -1.9196475837030447px 1.9196475837030447px -0.21428571428571427px
+      #4a4a4a0c,
+    0 -3.6374547591782176px 3.6374547591782176px -0.3214285714285714px #4a4a4a0e,
+    0 -6.350044814858119px 6.350044814858119px -0.42857142857142855px #4a4a4a11,
+    0 -11.051870570040771px 11.051870570040771px -0.5357142857142857px #4a4a4a16,
+    0 -20.24281195079675px 20.24281195079675px -0.6428571428571428px #4a4a4a20,
+    0 -40px 40px -0.75px #4a4a4a36;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.secParent {
+  scroll-snap-type: y mandatory;
+}
+.section {
+  scroll-snap-align: start;
+}
+
+.cardShadow {
+  box-shadow: 0 0.7961918735236395px 0.7961918735236395px -0.4375px #0000000a,
+    0 2.414506143104518px 2.414506143104518px -0.875px #0000000a,
+    0 6.382653521484461px 6.382653521484461px -1.3125px #0000000b,
+    0 20px 20px -1.75px #0001;
+}
+.cardShadowType2 {
+  box-shadow: -0.5927785749023314px 0.2963892874511657px 0.6627465945435319px -0.35000000000000003px
+      #00000005,
+    -1.6142934764211532px 0.8071467382105766px 1.804834974456076px -0.7000000000000001px
+      #00000005,
+    -3.5444042093295143px 1.7722021046647571px 3.962764375898594px -1.05px
+      #00000005,
+    -7.867768067278668px 3.933884033639334px 8.79643211481862px -1.4000000000000001px
+      #00000006,
+    -20px 10px 22.360679774997898px -1.75px #00000008;
+}
+.cardShadowType3 {
+  box-shadow: rgba(0, 0, 0, 0.047) 0px 0.597144px 2.03029px -0.5625px,
+    rgba(0, 0, 0, 0.047) 0px 1.81088px 6.15699px -1.125px,
+    rgba(0, 0, 0, 0.047) 0px 4.78699px 16.2758px -1.6875px,
+    rgba(0, 0, 0, 0.055) 0px 15px 51px -2.25px;
+}
+
+.tabBar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(235, 235, 235, 0.6);
+  border-radius: 100px;
+  opacity: 1;
+}
+.maskImage {
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgb(0, 0, 0) 12.5%,
+    rgb(0, 0, 0) 87.5%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
