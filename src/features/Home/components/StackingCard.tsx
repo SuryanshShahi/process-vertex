@@ -23,7 +23,7 @@ const StackingCard = ({
 }) => {
   return (
     <div
-      className={`bg-white lg:p-10 sm:p-6 p-4 stackingCard rounded-3xl ${className}`}
+      className={`bg-white h-[650px] lg:p-10 sm:p-6 p-4 stackingCard rounded-[32px] ${className}`}
     >
       <div className="grid lg:grid-cols-2 lg:gap-5 gap-10">
         <div className="space-y-5 max-w-[450px]">
@@ -31,9 +31,7 @@ const StackingCard = ({
             <div className="bg-gray-100 h-8 w-8 flex justify-center items-center rounded-lg">
               {icon}
             </div>
-            <div className="text-lg  text-[#717073]">
-              {headerText}
-            </div>
+            <div className="text-lg  text-[#717073]">{headerText}</div>
           </div>
           <div className="text-5xl  leading-[58px]">{title}</div>
           <p className=" text-[#87868a] leading-6">{desctiption}</p>

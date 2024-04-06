@@ -6,7 +6,7 @@ const PricingCard = ({ data, theme }: { theme?: "DARK"; data: any }) => {
   return (
     <div
       className={`hover:-mt-5 duration-500 border border-gray-200 p-7 rounded-3xl space-y-6 lg:max-w-[480px] ${
-        theme === "DARK" ? "bg-black" : "bg-white"
+        theme === "DARK" ? "bg-[rgb(19,19,20)]" : "bg-white"
       }`}
     >
       <div className="flex justify-between">
