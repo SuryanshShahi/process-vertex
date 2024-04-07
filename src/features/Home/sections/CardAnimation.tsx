@@ -12,6 +12,10 @@ import { BiComment } from "react-icons/bi";
 import { GoPlus } from "react-icons/go";
 import ImageCard from "../components/ImageCard";
 import Img from "@/shared/Img";
+import ProductCard from "../components/ProductCard";
+import Slider from "react-slick";
+import { SLICK_SETTING } from "@/utils/constant";
+import TeamCard from "../components/TeamCard";
 
 const CardAnimation = () => {
   const StatckingCard: { [x: string]: Variants } = {
@@ -218,23 +222,14 @@ const CardAnimation = () => {
                 title="Revise until you're 100% satisfied"
                 desctiption="Say goodbye to additional charges for revisions – we're committed to refining the designs until you're completely satisfied."
                 rightChildren={
-                  <div className="bg-black h-[450px] m-auto w-full rounded-3xl flex items-center justify-center">
-                    <div className="max-w-[300px] space-y-10">
-                      <div className="space-y-4">
-                        <div className="flex items-end">
-                          <div className="pricing-text text-[64px] font-medium leading-[77px]">
-                            $4,999
-                          </div>
-                          <span className="text-white">/ monthly</span>
-                        </div>
-                        <div className="text-[#646466] text-sm ">
-                          Pause or cancel anytime
-                        </div>
-                      </div>
-                      <Button className="bg-neutral-800 py-3 w-full text-white">
-                        Subscribe Now
-                      </Button>
-                    </div>
+                  <div className="bg-neutral-200 h-[450px] m-auto w-full rounded-3xl maskImage">
+                    <Slider {...SLICK_SETTING} speed={8000} className="mt-12">
+                      {["#808080", "#008000", "#0000FF", "#FF0000"]?.map(
+                        (item, idx) => (
+                          <ProductCard theme={item} key={idx} />
+                        )
+                      )}
+                    </Slider>
                   </div>
                 }
               />

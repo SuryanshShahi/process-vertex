@@ -7,37 +7,9 @@ import Heading from "../components/Heading";
 import TeamCard from "../components/TeamCard";
 import { motion } from "framer-motion";
 import { HeroVariants } from "@/utils/framer";
+import { SLICK_SETTING } from "@/utils/constant";
 
 const WhySubscribe = () => {
-  var settings = {
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 0,
-    cssEase: "linear",
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2.5,
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 500,
-        settings: {
-          slidesToShow: 1.5,
-        },
-      },
-    ],
-  };
   const communicationData = [
     {
       name: "You",
@@ -181,7 +153,7 @@ const WhySubscribe = () => {
               initial="hidden"
               custom={{ duration: 0.5 }}
             >
-              <Slider {...settings} speed={5000}>
+              <Slider {...SLICK_SETTING} speed={5000}>
                 {["#808080", "#FFFF00", "#008000", "#0000FF", "#FF0000"]?.map(
                   (item, idx) => (
                     <TeamCard
@@ -201,7 +173,7 @@ const WhySubscribe = () => {
               initial="hidden"
               custom={{ duration: 0.5 }}
             >
-              <Slider {...settings} speed={8000}>
+              <Slider {...SLICK_SETTING} speed={8000}>
                 {["#FF0000", "#0000FF", "#008000", "#FFFF00", "#808080"]?.map(
                   (item, idx) => (
                     <TeamCard

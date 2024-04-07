@@ -9,7 +9,7 @@ const styles = {
     noHover?: boolean
   ) =>
     clsx(
-      "h-max rounded-full text-white text-sm bg-black duration-500 p-2 px-5 text-base",
+      "h-max rounded-full text-white text-sm bg-black duration-500 p-2 px-5",
       fullWidth && "w-full",
       {
         "p-1 text-base": size === "md",
