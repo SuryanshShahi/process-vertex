@@ -24,7 +24,7 @@ const CardAnimation = () => {
         <div className="lg:h-[3000px] h-[4000px] space-y-20">
           <div className="md:top-[20%] top-[10%] sticky">
             <motion.div
-              viewport={{ once: false }}
+              viewport={{ once: false, amount: 0.1 }}
               variants={HeroVariants.STACKING_CARD}
               whileInView="show"
               initial="hidden"
@@ -39,7 +39,7 @@ const CardAnimation = () => {
       in lengthy contracts."
                 btnName="View Pricing"
                 rightChildren={
-                  <div className="bg-black w-full h-[450px] rounded-3xl flex items-center justify-center">
+                  <div className="bg-black w-full h-[450px] m-auto rounded-3xl flex items-center justify-center">
                     <div className="max-w-[300px] space-y-10">
                       <div className="space-y-4">
                         <div className="flex items-end">
@@ -63,7 +63,7 @@ const CardAnimation = () => {
           </div>
           <div className="md:top-[25%] top-[15%] sticky">
             <motion.div
-              viewport={{ once: false }}
+              viewport={{ once: false, amount: 0.1 }}
               variants={HeroVariants.STACKING_CARD}
               whileInView="show"
               initial="hidden"
@@ -90,10 +90,11 @@ const CardAnimation = () => {
                   </div>
                 }
                 rightChildren={
-                  <div className="max-w-[350px] w-full space-y-4 mx-auto">
+                  <div className="max-w-[350px] w-full space-y-4 m-auto">
                     <motion.div
-                      viewport={{ once: false }}
-                      variants={HeroVariants.LEFT}
+                      viewport={{ once: false, amount: 0.3 }}
+                      variants={HeroVariants.RIGHT}
+                      custom={{ delay: 1, duration: 0.8 }}
                       whileInView="show"
                       initial="hidden"
                       className="border gap-y-6 cardShadow border-gray-200 bg-gray-50 h-fit rounded-[18px] p-4 space-y-6"
@@ -110,7 +111,7 @@ const CardAnimation = () => {
                       <div className="space-y-2">
                         <div className="h-2 rounded-full w-full bg-gray-400 relative">
                           <motion.div
-                            viewport={{ once: false }}
+                            viewport={{ once: false, amount: 0.3 }}
                             variants={HeroVariants.PROGRESS}
                             whileInView="show"
                             initial="hidden"
@@ -142,9 +143,10 @@ const CardAnimation = () => {
                       </div>
                     </motion.div>
                     <motion.div
-                      viewport={{ once: false }}
-                      variants={HeroVariants.RIGHT}
+                      viewport={{ once: false, amount: 0.3 }}
+                      variants={HeroVariants.LEFT}
                       whileInView="show"
+                      custom={{ delay: 2, duration: 0.8 }}
                       initial="hidden"
                       className="border flex items-center gap-x-3 justify-center border-gray-200 p-4 rounded-[18px] cardShadow  bg-gray-50"
                     >
@@ -162,7 +164,7 @@ const CardAnimation = () => {
           </div>
           <div className="md:top-[30%] top-[20%] sticky">
             <motion.div
-              viewport={{ once: false }}
+              viewport={{ once: false, amount: 0.1 }}
               variants={HeroVariants.STACKING_CARD}
               whileInView="show"
               initial="hidden"
@@ -197,7 +199,7 @@ const CardAnimation = () => {
           </div>
           <div className="md:top-[35%] top-[25%] sticky">
             <motion.div
-              viewport={{ once: false }}
+              viewport={{ once: false, amount: 0.1 }}
               variants={HeroVariants.STACKING_CARD}
               whileInView="show"
               initial="hidden"

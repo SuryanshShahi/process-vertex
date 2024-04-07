@@ -6,66 +6,75 @@ export const HeroVariants: { [x: string]: Variants } = {
       opacity: 0,
       scaleX:
         typeof window !== "undefined" && window?.innerWidth > 1280 ? 1.2 : 1,
-      position: "relative",
     },
-    show: {
+    show: (prop?: any) => ({
       opacity: 1,
       scaleX: 1,
-      position: "relative",
-      transition: { duration: 0.5, staggerChildren: 0.5 },
-    },
+      transition: {
+        delay: prop?.delay && 0.05 * prop?.delay,
+        duration: prop?.duration || 0.5,
+      },
+    }),
   },
   CARD: {
     hidden: {
       opacity: 0,
-      top: 200,
+      y: 200,
       position: "relative",
     },
-    show: {
+    show: (prop?: any) => ({
       opacity: 1,
-      top: 0,
+      y: 0,
       position: "relative",
-      transition: { duration: 0.5, staggerChildren: 0.5 },
-    },
+      transition: {
+        delay: prop?.delay && 0.05 * prop?.delay,
+        duration: prop?.duration || 0.3,
+      },
+    }),
   },
   CARD1: {
     hidden: {
       opacity: 0,
-      top: -200,
+      y: -200,
       position: "relative",
     },
-    show: {
+    show: (prop?: any) => ({
       opacity: 1,
-      top: 0,
+      y: 0,
       position: "relative",
-      transition: { duration: 0.5, staggerChildren: 0.5 },
-    },
+      transition: {
+        delay: prop?.delay && 0.05 * prop?.delay,
+        duration: prop?.duration || 0.3,
+      },
+    }),
   },
   LEFT: {
     hidden: {
       opacity: 0,
-      left: -200,
-      position: "relative",
+      x: -200,
     },
-    show: {
+    show: (prop?: any) => ({
       opacity: 1,
-      left: 0,
-      position: "relative",
-      transition: { duration: 0.3, staggerChildren: 0.5 },
-    },
+      x: 0,
+      transition: {
+        delay: prop?.delay && 0.05 * prop?.delay,
+        duration: prop?.duration || 0.2,
+      },
+    }),
   },
   RIGHT: {
     hidden: {
       opacity: 0,
-      right: -200,
-      position: "relative",
+      x: 200,
     },
-    show: {
+    show: (prop?: any) => ({
       opacity: 1,
-      right: 0,
-      position: "relative",
-      transition: { duration: 0.3, staggerChildren: 0.5 },
-    },
+      x: 0,
+      transition: {
+        delay: prop?.delay && 0.05 * prop?.delay,
+        duration: prop?.duration || 0.2,
+      },
+    }),
   },
   PROGRESS: {
     hidden: {
@@ -77,7 +86,7 @@ export const HeroVariants: { [x: string]: Variants } = {
       opacity: 1,
       width: "75%",
       position: "relative",
-      transition: { duration: 1, staggerChildren: 0.5 },
+      transition: { duration: 1 },
     },
   },
   NO_MORE: {
@@ -90,7 +99,7 @@ export const HeroVariants: { [x: string]: Variants } = {
       opacity: 1,
       top: 0,
       position: "relative",
-      transition: { duration: 1, staggerChildren: 0.5 },
+      transition: { duration: 1 },
     },
   },
 

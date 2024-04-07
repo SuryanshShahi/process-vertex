@@ -17,8 +17,9 @@ const OurPricing = () => {
       />
       <div className="flex lg:flex-row flex-col justify-center gap-10">
         <motion.div
-          viewport={{ once: false }}
+          viewport={{ once: false, amount: 0.3 }}
           variants={HeroVariants.LEFT}
+          custom={{ duration: 0.6 }}
           whileInView="show"
           initial="hidden"
         >
@@ -49,10 +50,11 @@ const OurPricing = () => {
           />
         </motion.div>
         <motion.div
-          viewport={{ once: false }}
+          viewport={{ once: false, amount: 0.3 }}
           variants={HeroVariants.RIGHT}
           whileInView="show"
           initial="hidden"
+          custom={{ duration: 0.6 }}
         >
           <PricingCard
             theme="DARK"

@@ -38,7 +38,82 @@ const WhySubscribe = () => {
       },
     ],
   };
-
+  const communicationData = [
+    {
+      name: "You",
+      description: "Hey!",
+      icon: (
+        <FaUserAlt
+          className="bg-red-800 text-pink-400 rounded-lg pt-2 min-w-12"
+          size={48}
+        />
+      ),
+      className: "opacity-20",
+    },
+    {
+      name: "You",
+      description: "How are you?",
+      icon: (
+        <FaUserAlt
+          className="bg-red-800 text-pink-400 rounded-lg pt-2 min-w-12"
+          size={48}
+        />
+      ),
+      className: "absolute right-5 -top-10 opacity-20",
+    },
+    {
+      name: "You",
+      description: "I would like to request a design for a landing page",
+      icon: (
+        <FaUserAlt
+          className="bg-red-800 text-pink-400 rounded-lg pt-2 min-w-12"
+          size={48}
+        />
+      ),
+      className: "mx-auto relative z-10",
+    },
+    {
+      name: "Process",
+      description: "Hey! what can we do for you today?",
+      icon: (
+        <Img
+          height={48}
+          width={48}
+          src="/images/icons/logo.webp"
+          isLocal
+          className="object-contain -mt-2"
+          alt=""
+        />
+      ),
+      className: "-left-10 absolute -mt-16 opacity-20",
+    },
+    {
+      name: "Process",
+      description: "Sure! We will get back to you by the end of tomorrow 😉",
+      icon: (
+        <Img
+          height={48}
+          width={48}
+          src="/images/icons/logo.webp"
+          isLocal
+          className="object-contain -mt-2"
+          alt=""
+        />
+      ),
+      className: "-left-[5%] z-10 ml-auto relative mt-5",
+    },
+    {
+      name: "You",
+      description: "Great!",
+      icon: (
+        <FaUserAlt
+          className="bg-red-800 text-pink-400 rounded-lg pt-2 min-w-12"
+          size={48}
+        />
+      ),
+      className: "opacity-20 -mt-14",
+    },
+  ];
   return (
     <div className="space-y-20">
       <Heading
@@ -50,7 +125,7 @@ const WhySubscribe = () => {
       <div className="grid grid-cols-12 lg:gap-10 gap-5">
         <div className="lg:col-span-4 sm:col-span-6 lg:order-1 order-2 col-span-12 border flex flex-col justify-center border-gray-200 px-5 md:py-10 py-5 rounded-3xl text-center">
           <motion.div
-            viewport={{ once: false }}
+            viewport={{ once: false, amount: 0.3 }}
             variants={HeroVariants.LEFT}
             whileInView="show"
             initial="hidden"
@@ -69,122 +144,24 @@ const WhySubscribe = () => {
           </div>
         </div>
         <div className="lg:col-span-8 lg:order-2 order-1 col-span-12 border border-gray-200 overflow-hidden relative p-5 rounded-3xl text-center">
-          <motion.div
-            viewport={{ once: false }}
-            variants={HeroVariants.CARD}
-            whileInView="show"
-            initial="hidden"
-          >
-            <CommentCard
-              className="opacity-20"
-              name="You"
-              description="Hey!"
-              icon={
-                <FaUserAlt
-                  className="bg-red-800 text-pink-400 rounded-lg pt-2 min-w-12"
-                  size={48}
-                />
-              }
-            />
-          </motion.div>
-          <motion.div
-            viewport={{ once: false }}
-            variants={HeroVariants.CARD}
-            whileInView="show"
-            initial="hidden"
-          >
-            <CommentCard
-              className="absolute right-5 -top-10 opacity-20"
-              name="You"
-              description="How are you?"
-              icon={
-                <FaUserAlt
-                  className="bg-red-800 text-pink-400 rounded-lg pt-2 min-w-12"
-                  size={48}
-                />
-              }
-            />
-          </motion.div>
-          <motion.div
-            viewport={{ once: false }}
-            variants={HeroVariants.CARD}
-            whileInView="show"
-            initial="hidden"
-          >
-            <CommentCard
-              className="mx-auto relative z-10"
-              name="You"
-              description="I would like to request a design for a landing page"
-              icon={
-                <FaUserAlt
-                  className="bg-red-800 text-pink-400 rounded-lg pt-2 min-w-12"
-                  size={48}
-                />
-              }
-            />
-          </motion.div>
-          <motion.div
-            viewport={{ once: false }}
-            variants={HeroVariants.CARD}
-            whileInView="show"
-            initial="hidden"
-          >
-            <CommentCard
-              className="-left-10 absolute -mt-16 opacity-20"
-              name="Process"
-              description="Hey! what can we do for you today?"
-              icon={
-                <Img
-                  height={48}
-                  width={48}
-                  src="/images/icons/logo.webp"
-                  isLocal
-                  className="object-contain -mt-2"
-                  alt=""
-                />
-              }
-            />
-          </motion.div>
-          <motion.div
-            viewport={{ once: false }}
-            variants={HeroVariants.CARD}
-            whileInView="show"
-            initial="hidden"
-          >
-            <CommentCard
-              className="-left-[5%] z-10 ml-auto relative mt-5"
-              name="Process"
-              description="Sure! We will get back to you by the end of tomorrow 😉"
-              icon={
-                <Img
-                  height={48}
-                  width={48}
-                  src="/images/icons/logo.webp"
-                  isLocal
-                  className="object-contain -mt-2"
-                  alt=""
-                />
-              }
-            />
-          </motion.div>
-          <motion.div
-            viewport={{ once: false }}
-            variants={HeroVariants.CARD}
-            whileInView="show"
-            initial="hidden"
-          >
-            <CommentCard
-              className="opacity-20 -mt-14"
-              name="You"
-              description="Great!"
-              icon={
-                <FaUserAlt
-                  className="bg-red-800 text-pink-400 rounded-lg pt-2 min-w-12"
-                  size={48}
-                />
-              }
-            />
-          </motion.div>
+          {communicationData?.map((item, idx) => (
+            <motion.div
+              viewport={{ once: false }}
+              variants={HeroVariants.CARD}
+              whileInView="show"
+              initial="hidden"
+              custom={{ delay: idx }}
+              key={idx}
+            >
+              <CommentCard
+                className={item?.className}
+                name={item?.name}
+                description={item?.description}
+                icon={item?.icon}
+              />
+            </motion.div>
+          ))}
+
           <div className="mt-14 space-y-5">
             <div className="text-black lg:text-2xl text-lg">
               Efficient communication
@@ -198,10 +175,11 @@ const WhySubscribe = () => {
         <div className="lg:col-span-8 lg:order-3 order-4 col-span-12 relative py-10 md:space-y-10 rounded-3xl border border-gray-200">
           <div className="maskImage">
             <motion.div
-              viewport={{ once: false }}
+              viewport={{ once: false, amount: 0.3 }}
               variants={HeroVariants.CARD}
               whileInView="show"
               initial="hidden"
+              custom={{ duration: 0.5 }}
             >
               <Slider {...settings} speed={5000}>
                 {["#808080", "#FFFF00", "#008000", "#0000FF", "#FF0000"]?.map(
@@ -217,10 +195,11 @@ const WhySubscribe = () => {
               </Slider>
             </motion.div>
             <motion.div
-              viewport={{ once: false }}
+              viewport={{ once: false, amount: 0.3 }}
               variants={HeroVariants.CARD1}
               whileInView="show"
               initial="hidden"
+              custom={{ duration: 0.5 }}
             >
               <Slider {...settings} speed={8000}>
                 {["#FF0000", "#0000FF", "#008000", "#FFFF00", "#808080"]?.map(
@@ -268,6 +247,7 @@ const WhySubscribe = () => {
                 variants={idx % 2 == 0 ? HeroVariants.LEFT : HeroVariants.RIGHT}
                 whileInView="show"
                 initial="hidden"
+                custom={{ delay: idx }}
                 key={idx}
                 className="flex items-center gap-x-3 mt-auto px-5"
               >
