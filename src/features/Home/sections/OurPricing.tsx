@@ -19,7 +19,7 @@ const OurPricing = () => {
         <motion.div
           viewport={{ once: false, amount: 0.3 }}
           variants={HeroVariants.LEFT}
-          custom={{ duration: 0.6 }}
+          custom={{ duration: 0.4 }}
           whileInView="show"
           initial="hidden"
         >
@@ -54,7 +54,7 @@ const OurPricing = () => {
           variants={HeroVariants.RIGHT}
           whileInView="show"
           initial="hidden"
-          custom={{ duration: 0.6 }}
+          custom={{ duration: 0.4 }}
         >
           <PricingCard
             theme="DARK"

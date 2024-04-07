@@ -4,14 +4,62 @@ import { FaUserAlt, FaYoutube } from "react-icons/fa";
 import { MdCheckCircleOutline, MdEdit } from "react-icons/md";
 import { IoIosAttach, IoMdCheckmark } from "react-icons/io";
 import { FaCirclePause } from "react-icons/fa6";
-import { motion } from "framer-motion";
+import { Variants, motion } from "framer-motion";
 import StackingCard from "../components/StackingCard";
 import Heading from "../components/Heading";
 import { HeroVariants } from "@/utils/framer";
 import { BiComment } from "react-icons/bi";
 import { GoPlus } from "react-icons/go";
+import ImageCard from "../components/ImageCard";
+import Img from "@/shared/Img";
 
 const CardAnimation = () => {
+  const StatckingCard: { [x: string]: Variants } = {
+    LEFT: {
+      hidden: {
+        opacity: 0,
+        x: -350,
+      },
+      show: (prop?: any) => ({
+        opacity: 1,
+        position: "absolute",
+        x: 0,
+        transition: {
+          delay: prop?.delay && 0.05 * prop?.delay,
+          staggerChildren: 0.5,
+        },
+      }),
+    },
+    RIGHT: {
+      hidden: {
+        opacity: 0,
+        x: 350,
+      },
+      show: (prop?: any) => ({
+        opacity: 1,
+        position: "absolute",
+        x: 0,
+        transition: {
+          delay: prop?.delay && 0.05 * prop?.delay,
+          staggerChildren: 0.5,
+        },
+      }),
+    },
+    TOP: {
+      hidden: {
+        opacity: 0,
+        y: 250,
+      },
+      show: (prop?: any) => ({
+        opacity: 1,
+        y: 0,
+        transition: {
+          delay: prop?.delay && 0.05 * prop?.delay,
+          duration: 0.3,
+        },
+      }),
+    },
+  };
   return (
     <div className="howWeWork pt-[160px] pb-[60px]">
       <div className="container mx-auto sm:px-5 px-4 space-y-20">
@@ -129,17 +177,12 @@ const CardAnimation = () => {
                         <div className="text-sm text-[#87868a] flex items-center gap-x-1">
                           <IoIosAttach size={12} className="text-[#adacb0]" />2
                         </div>
-                        <div
-                          className="h-[30px] ml-auto w-[30px] flex justify-center items-center rounded-full"
-                          style={{ backgroundColor: "#000000" + "80" }}
-                        >
-                          <img
-                            src="https://framerusercontent.com/images/GaxkgrTkzKlxI7B3EJtZp4dabI.png"
-                            height={24}
-                            width={24}
-                            alt=""
-                          />
-                        </div>
+                        <ImageCard
+                          className="!h-[30px] ml-auto !w-[30px]"
+                          color="#ff0000"
+                          height={24}
+                          weight={24}
+                        />
                       </div>
                     </motion.div>
                     <motion.div
@@ -175,7 +218,7 @@ const CardAnimation = () => {
                 title="Revise until you're 100% satisfied"
                 desctiption="Say goodbye to additional charges for revisions – we're committed to refining the designs until you're completely satisfied."
                 rightChildren={
-                  <div className="bg-black h-[450px] rounded-3xl flex items-center justify-center">
+                  <div className="bg-black h-[450px] m-auto w-full rounded-3xl flex items-center justify-center">
                     <div className="max-w-[300px] space-y-10">
                       <div className="space-y-4">
                         <div className="flex items-end">
@@ -212,23 +255,71 @@ const CardAnimation = () => {
                 title="Pause or cancel anytime"
                 desctiption="The flexibility of our service sets Process apart as an exceptional design partner. Choose to maintain your subscription to meet ongoing design needs, or simply cancel when your design requirements are fulfilled."
                 rightChildren={
-                  <div className="bg-black h-[450px] rounded-3xl flex items-center justify-center">
-                    <div className="max-w-[300px] space-y-10">
-                      <div className="space-y-4">
-                        <div className="flex items-end">
-                          <div className="pricing-text text-[64px] font-medium leading-[77px]">
-                            $4,999
-                          </div>
-                          <span className="text-white">/ monthly</span>
-                        </div>
-                        <div className="text-[#646466] text-sm ">
-                          Pause or cancel anytime
-                        </div>
-                      </div>
-                      <Button className="bg-neutral-800 py-3 w-full text-white">
-                        Subscribe Now
-                      </Button>
-                    </div>
+                  <div className="px-8 pt-8 overflow-hidden relative max-h-[450px] mx-auto w-full overflowhidden bg-[linear-gradient(180deg,#e8deff_0%,rgb(250,245,255)_60%,rgb(253,247,255)_99%)] rounded-3xl">
+                    <motion.div
+                      viewport={{ once: false, amount: 0.2 }}
+                      custom={{ delay: 0.5 }}
+                      variants={StatckingCard.RIGHT}
+                      whileInView="show"
+                      initial="hidden"
+                      className="absolute top-10 left-[10%]"
+                    >
+                      <ImageCard
+                        className="!h-[80px] !w-[80px]"
+                        color="#808080"
+                        height={68}
+                        weight={68}
+                      />
+                    </motion.div>
+                    <motion.img
+                      viewport={{ once: false, amount: 0.2 }}
+                      custom={{ delay: 1 }}
+                      variants={StatckingCard.TOP}
+                      whileInView="show"
+                      initial="hidden"
+                      src="https://framerusercontent.com/images/zE1srbw5NnBTIC4p1Pm1mHUTk94.webp"
+                      className="w-[220px] h-[440px] cardShadow rounded-t-2xl mx-auto mt-8"
+                    />
+
+                    <motion.img
+                      viewport={{ once: false, amount: 0.2 }}
+                      custom={{ delay: 1.5 }}
+                      variants={StatckingCard.LEFT}
+                      whileInView="show"
+                      initial="hidden"
+                      src="https://framerusercontent.com/images/Ga8vfNFxAf9JwpbK2esRcOPBtc.png"
+                      className="w-[180px] h-[142px] absolute cardShadow right-[8%] bottom-[10%] rounded-2xl"
+                    />
+                    <motion.div
+                      viewport={{ once: false, amount: 0.2 }}
+                      custom={{ delay: 2 }}
+                      variants={StatckingCard.RIGHT}
+                      whileInView="show"
+                      initial="hidden"
+                      className="bottom-20 w-fit absolute"
+                    >
+                      <ImageCard
+                        className="!h-[80px] !w-[80px]"
+                        color="#FFFF00"
+                        height={68}
+                        weight={68}
+                      />
+                    </motion.div>
+                    <motion.div
+                      viewport={{ once: false, amount: 0.2 }}
+                      custom={{ delay: 2.5 }}
+                      variants={StatckingCard.LEFT}
+                      whileInView="show"
+                      initial="hidden"
+                      className="right-10 top-32 absolute"
+                    >
+                      <ImageCard
+                        className="!h-[80px] !w-[80px]"
+                        color="#ff0000"
+                        height={68}
+                        weight={68}
+                      />
+                    </motion.div>
                   </div>
                 }
               />

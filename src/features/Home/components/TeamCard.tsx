@@ -1,4 +1,5 @@
 import React from "react";
+import ImageCard from "./ImageCard";
 
 const TeamCard = ({
   title,
@@ -7,7 +8,7 @@ const TeamCard = ({
 }: {
   title: string;
   designation: string;
-  color?: string;
+  color: string;
 }) => {
   return (
     <div
@@ -20,18 +21,12 @@ const TeamCard = ({
           {designation}
         </div>
       </div>
-
-      <div
-        className="h-[60px] w-[60px] flex justify-center items-center rounded-full"
-        style={{ backgroundColor: color + "80" }}
-      >
-        <img
-          src="https://framerusercontent.com/images/GaxkgrTkzKlxI7B3EJtZp4dabI.png"
-          height={48}
-          width={48}
-          alt=""
-        />
-      </div>
+      <ImageCard
+        className="h-[60px] w-[60px]"
+        color={color}
+        height={48}
+        weight={48}
+      />
     </div>
   );
 };
