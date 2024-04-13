@@ -2,6 +2,7 @@ import React from "react";
 import CardAnimation from "./sections/CardAnimation";
 import WhySubscribe from "./sections/WhySubscribe";
 import OurPricing from "./sections/OurPricing";
+import Integration from "./sections/Integration";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         <WhySubscribe />
         <OurPricing />
       </div>
+      <Integration />
     </div>
   );
 };

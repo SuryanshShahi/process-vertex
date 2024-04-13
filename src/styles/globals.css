@@ -91,3 +91,21 @@
     rgba(0, 0, 0, 0) 100%
   );
 }
+
+.animate-clockWise {
+  animation: clockWise 50s linear infinite;
+}
+.animate-antiClockWise {
+  animation: antiClockWise 50s linear infinite;
+}
+
+@keyframes clockWise {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes antiClockWise {
+  to {
+    transform: rotate(-360deg);
+  }
+}
