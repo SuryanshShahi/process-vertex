@@ -8,9 +8,15 @@ export const SLICK_SETTING = {
   arrows: false,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 990,
       settings: {
         slidesToShow: 2.5,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1.5,
       },
     },
     {

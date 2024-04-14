@@ -23,9 +23,9 @@ const StackingCard = ({
 }) => {
   return (
     <div
-      className={`bg-white h-[650px] lg:p-10 sm:p-6 p-4 stackingCard rounded-[32px] ${className}`}
+      className={`bg-white min-h-[650px] lg:p-10 sm:p-6 p-4 stackingCard sm:rounded-[32px] rounded-3xl ${className}`}
     >
-      <div className="grid lg:grid-cols-2 lg:gap-5 min-h-full gap-10">
+      <div className="grid md:grid-cols-2 lg:gap-5 min-h-full gap-10">
         <div className="space-y-5 max-w-[450px]">
           <div className="flex items-center gap-x-2">
             <div className="bg-gray-100 h-8 w-8 flex justify-center items-center rounded-lg">

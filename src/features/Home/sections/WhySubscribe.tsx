@@ -106,10 +106,10 @@ const WhySubscribe = () => {
             <FaFolder size={120} className="text-blue-300" />
           </motion.div>
           <div className="mt-auto space-y-5">
-            <div className="text-black lg:text-2xl text-lg">
+            <div className="text-black lg:text-2xl  sm:text-lg text-[22px]">
               Fast turnarounds
             </div>
-            <div className="leading-5 text-sm text-[#717073]">
+            <div className="leading-5 sm:text-sm text-[#717073]">
               Receive lightning-fast delivery of your design request within 24
               to 48 hours.
             </div>
@@ -135,10 +135,10 @@ const WhySubscribe = () => {
           ))}
 
           <div className="mt-14 space-y-5">
-            <div className="text-black lg:text-2xl text-lg">
+            <div className="text-black lg:text-2xl  sm:text-lg text-[22px]">
               Efficient communication
             </div>
-            <div className="leading-5 text-sm text-[#717073]">
+            <div className="leading-5 sm:text-sm text-[#717073]">
               Real-time conversations with your team whenever there's a new
               request or revision.
             </div>
@@ -188,10 +188,10 @@ const WhySubscribe = () => {
             </motion.div>
           </div>
           <div className="mt-auto px-5 space-y-5 text-center max-w-[400px] mx-auto">
-            <div className="text-black lg:text-2xl text-lg ">
+            <div className="text-black lg:text-2xl  sm:text-lg text-[22px]">
               Top-tier creative team
             </div>
-            <div className="leading-5 text-sm text-[#717073]">
+            <div className="leading-5 sm:text-sm text-[#717073]">
               We work with a network of creatives from different disciplines to
               deliver outstanding design solutions to you.
             </div>
@@ -231,8 +231,8 @@ const WhySubscribe = () => {
             ))}
           </motion.div>
           <div className="md:mt-auto mt-5 space-y-5 text-center max-w-[400px] mx-auto">
-            <div className="text-black lg:text-2xl text-lg">Flexibility</div>
-            <div className="leading-5 text-sm text-[#717073]">
+            <div className="text-black lg:text-2xl sm:text-lg text-[22px]">Flexibility</div>
+            <div className="leading-5 sm:text-sm text-[#717073]">
               Scale up or down, pause, or cancel anytime.
             </div>
           </div>

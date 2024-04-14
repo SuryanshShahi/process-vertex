@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 const OurPricing = () => {
   return (
-    <div className="space-y-20">
+    <div className="space-y-20 overflow-x-hidden">
       <Heading
         title="Our Pricing."
         className="!text-black"

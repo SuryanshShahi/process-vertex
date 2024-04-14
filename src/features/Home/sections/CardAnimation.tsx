@@ -64,6 +64,15 @@ const CardAnimation = () => {
       }),
     },
   };
+  const width =
+    typeof window !== "undefined" && window?.outerWidth < 768
+      ? window?.outerWidth - 100
+      : "100%";
+  console.log(
+    { width },
+    { innner: typeof window !== "undefined" && window?.outerWidth }
+  );
+
   return (
     <div className="howWeWork pt-[160px] pb-[60px]">
       <div className="container mx-auto sm:px-5 px-4 space-y-20">
@@ -74,7 +83,7 @@ const CardAnimation = () => {
         />
 
         <div className="lg:h-[3000px] h-[4000px] space-y-20">
-          <div className="md:top-[20%] top-[10%] sticky">
+          <div className="md:top-[20%] sm:top-[10%] top-[10%] sticky">
             <motion.div
               viewport={{ once: false, amount: 0.1 }}
               variants={HeroVariants.STACKING_CARD}
@@ -113,7 +122,7 @@ const CardAnimation = () => {
               />
             </motion.div>
           </div>
-          <div className="md:top-[25%] top-[15%] sticky">
+          <div className="md:top-[25%] sm:top-[15%] top-[10%] sticky">
             <motion.div
               viewport={{ once: false, amount: 0.1 }}
               variants={HeroVariants.STACKING_CARD}
@@ -142,7 +151,7 @@ const CardAnimation = () => {
                   </div>
                 }
                 rightChildren={
-                  <div className="max-w-[350px] w-full space-y-4 m-auto">
+                  <div className="max-w-[350px] w-full space-y-4 m-auto md:overflow-x-hidden overflow-x-hidden sm:overflow-x-visible lg:overflow-x-visible  lg:py-0 lg:px-0">
                     <motion.div
                       viewport={{ once: false, amount: 0.3 }}
                       variants={HeroVariants.RIGHT}
@@ -209,7 +218,7 @@ const CardAnimation = () => {
               />
             </motion.div>
           </div>
-          <div className="md:top-[30%] top-[20%] sticky">
+          <div className="md:top-[30%] sm:top-[20%] top-[10%] sticky">
             <motion.div
               viewport={{ once: false, amount: 0.1 }}
               variants={HeroVariants.STACKING_CARD}
@@ -222,7 +231,7 @@ const CardAnimation = () => {
                 title="Revise until you're 100% satisfied"
                 desctiption="Say goodbye to additional charges for revisions – we're committed to refining the designs until you're completely satisfied."
                 rightChildren={
-                  <div className="bg-neutral-200 h-[450px] m-auto w-full rounded-3xl maskImage">
+                  <div className="bg-neutral-200 h-[450px] m-auto md:w-full rounded-3xl maskImage w-[calc(100vw-100px)]">
                     <Slider {...SLICK_SETTING} speed={8000} className="mt-12">
                       {["#808080", "#008000", "#0000FF", "#FF0000"]?.map(
                         (item, idx) => (
@@ -235,7 +244,7 @@ const CardAnimation = () => {
               />
             </motion.div>
           </div>
-          <div className="md:top-[35%] top-[25%] sticky">
+          <div className="md:top-[35%] sm:top-[25%] top-[10%] sticky">
             <motion.div
               viewport={{ once: false, amount: 0.1 }}
               variants={HeroVariants.STACKING_CARD}
