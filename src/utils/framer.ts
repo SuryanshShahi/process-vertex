@@ -92,7 +92,7 @@ export const HeroVariants: { [x: string]: Variants } = {
   NO_MORE: {
     hidden: {
       opacity: 0,
-      top: width > 990 ? -300 : -200,
+      top: Number(width) > 990 ? -300 : -200,
       position: "relative",
     },
     show: {
