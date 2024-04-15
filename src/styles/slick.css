@@ -6,8 +6,6 @@
   margin: 0 -25px;
 }
 
-
-
 .slick-slider {
   position: relative;
 
@@ -110,13 +108,21 @@
   border: 1px solid transparent;
 }
 
-.slick-track {
+.customSliderSetting .slick-track {
   display: flex !important;
 }
 
-.slick-slide {
+.customSliderSetting .slick-slide {
   height: inherit !important;
 }
-.slick-slide > div {
+.customSliderSetting .slick-slide > div {
   height: 100% !important;
+}
+
+.verticalSlider .slick-slide {
+  margin: 12px 0;
+}
+
+.verticalSlider .slick-list {
+  margin: -12px 0;
 }

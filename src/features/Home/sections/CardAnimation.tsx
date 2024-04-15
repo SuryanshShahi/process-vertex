@@ -209,7 +209,7 @@ const CardAnimation = () => {
               />
             </motion.div>
           </div>
-          <div className="md:top-[30%] sm:top-[20%] top-[10%] sticky">
+          <div className="md:top-[30%] sm:top-[20%] top-[10%] sticky customSliderSetting">
             <motion.div
               viewport={{ once: false, amount: 0.1 }}
               variants={HeroVariants.STACKING_CARD}

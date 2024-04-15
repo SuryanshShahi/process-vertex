@@ -87,7 +87,7 @@ const WhySubscribe = () => {
     },
   ];
   return (
-    <div className="space-y-20">
+    <div className="space-y-20 customSliderSetting">
       <Heading
         className="!text-black"
         title="Why subscribe?"
