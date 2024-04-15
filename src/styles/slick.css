@@ -121,6 +121,12 @@
 
 .verticalSlider .slick-slide {
   margin: 12px 0;
+  width: fit-content !important;
+}
+@media (max-width: 640px) {
+  .verticalSlider .slick-track {
+    width: calc(100% - 40px);
+  }
 }
 
 .verticalSlider .slick-list {

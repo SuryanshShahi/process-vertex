@@ -43,6 +43,7 @@ export const SLICK_VERTICAL_SETTING = {
   centerPadding: "60px",
   cssEase: "linear",
   autoplaySpeed: 0,
+  arrows: false,
 };
 
 export const SLICK_VERTICAL_SETTING2 = {
@@ -55,4 +56,5 @@ export const SLICK_VERTICAL_SETTING2 = {
   centerPadding: "60px",
   cssEase: "linear",
   autoplaySpeed: 0,
+  arrows: false,
 };

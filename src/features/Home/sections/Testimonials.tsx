@@ -22,7 +22,7 @@ const Testimonials = () => {
         <div className="font-bold">Testimonials</div>
       </div>
       <div className="text-5xl font-bold text-center">They love Vertex</div>
-      <div className="py-10 maskImageVertical maskImage h-screen grid grid-cols-2">
+      <div className="py-10 maskImageVertical maskImage md:h-screen grid lg:gap-0 gap-6 md:grid-cols-2">
         <Slider {...SLICK_VERTICAL_SETTING} speed={8000}>
           {[1, 1, 1, 1, 1]?.map((item, idx) => (
             <div
@@ -46,7 +46,11 @@ const Testimonials = () => {
             </div>
           ))}
         </Slider>
-        <Slider {...SLICK_VERTICAL_SETTING2} speed={8000}>
+        <Slider
+          {...SLICK_VERTICAL_SETTING2}
+          speed={8000}
+          className="md:block hidden"
+        >
           {[1, 1, 1, 1, 1]?.map((item, idx) => (
             <div
               className="p-10 rounded-[20px] testimonialCard space-y-5 w-full max-w-[520px]"
