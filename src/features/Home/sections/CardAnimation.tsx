@@ -11,18 +11,17 @@ import { HeroVariants } from "@/utils/framer";
 import { BiComment } from "react-icons/bi";
 import { GoPlus } from "react-icons/go";
 import ImageCard from "../components/ImageCard";
-import Img from "@/shared/Img";
 import ProductCard from "../components/ProductCard";
 import Slider from "react-slick";
 import { SLICK_SETTING } from "@/utils/constant";
-import TeamCard from "../components/TeamCard";
 
 const CardAnimation = () => {
+  const width = typeof window !== "undefined" && window?.innerWidth;
   const StatckingCard: { [x: string]: Variants } = {
     LEFT: {
       hidden: {
         opacity: 0,
-        x: -350,
+        x: Number(width) > 500 ? -350 : -100,
       },
       show: (prop?: any) => ({
         opacity: 1,
@@ -37,7 +36,7 @@ const CardAnimation = () => {
     RIGHT: {
       hidden: {
         opacity: 0,
-        x: 350,
+        x: Number(width) > 500 ? 350 : 100,
       },
       show: (prop?: any) => ({
         opacity: 1,
@@ -64,14 +63,6 @@ const CardAnimation = () => {
       }),
     },
   };
-  const width =
-    typeof window !== "undefined" && window?.outerWidth < 768
-      ? window?.outerWidth - 100
-      : "100%";
-  console.log(
-    { width },
-    { innner: typeof window !== "undefined" && window?.outerWidth }
-  );
 
   return (
     <div className="howWeWork pt-[160px] pb-[60px]">
@@ -259,7 +250,7 @@ const CardAnimation = () => {
                 title="Pause or cancel anytime"
                 desctiption="The flexibility of our service sets Process apart as an exceptional design partner. Choose to maintain your subscription to meet ongoing design needs, or simply cancel when your design requirements are fulfilled."
                 rightChildren={
-                  <div className="px-8 pt-8 overflow-hidden relative max-h-[450px] mx-auto w-full overflowhidden bg-[linear-gradient(180deg,#e8deff_0%,rgb(250,245,255)_60%,rgb(253,247,255)_99%)] rounded-3xl">
+                  <div className="px-8 pt-8 overflow-hidden relative max-h-[450px] mx-auto w-full bg-[linear-gradient(180deg,#e8deff_0%,rgb(250,245,255)_60%,rgb(253,247,255)_99%)] rounded-3xl">
                     <motion.div
                       viewport={{ once: false, amount: 0.2 }}
                       custom={{ delay: 0.5 }}

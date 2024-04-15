@@ -203,7 +203,7 @@ const WhySubscribe = () => {
             variants={HeroVariants.NO_MORE}
             whileInView="show"
             initial="hidden"
-            className="bg-[rgb(250, 250, 250)] space-y-4 cardShadowType2 px-5 py-8 rounded-es-2xl rounded-se-3xl ml-auto md:w-[80%] w-full"
+            className="bg-[rgb(250, 250, 250)] space-y-4 cardShadowType2 px-5 py-8 rounded-es-2xl rounded-se-3xl ml-auto md:w-[80%] sm:w-full"
           >
             <div className="lg:text-2xl text-lg lg:mb-16 mb-6">
               Say no more to

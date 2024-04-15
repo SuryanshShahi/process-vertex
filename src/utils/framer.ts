@@ -1,5 +1,5 @@
 import { Variants } from "framer-motion";
-
+const width = typeof window !== "undefined" && window?.innerWidth;
 export const HeroVariants: { [x: string]: Variants } = {
   STACKING_CARD: {
     hidden: {
@@ -92,7 +92,7 @@ export const HeroVariants: { [x: string]: Variants } = {
   NO_MORE: {
     hidden: {
       opacity: 0,
-      top: -300,
+      top: width > 990 ? -300 : -200,
       position: "relative",
     },
     show: {

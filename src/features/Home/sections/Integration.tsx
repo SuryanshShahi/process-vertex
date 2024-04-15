@@ -60,7 +60,7 @@ const Integration = () => {
         Integrate effortlessly with your favorite tools and platforms.
       </p>
 
-      <div className="h-[350px] md:scale-100 sm:scale-75 scale-50 overflow-hidden sm:p-20 p-10">
+      <div className="h-[350px] md:scale-100 sm:scale-75 scale-50 overflow-hidden sm:p-20 p-10 md:w-full integrationBg">
         <div className="relative flex justify-center items-center">
           <div className="animate-clockWise border border-gray-200 flex justify-center items-center relative rounded-full h-[600px] w-[600px]">
             {data?.map((item, idx) => (
@@ -71,7 +71,7 @@ const Integration = () => {
               />
             ))}
           </div>
-          <div className="border absolute top-[100px] border-gray-200 animate-antiClockWise  rounded-full h-[350px] w-[350px]">
+          <div className="border absolute border-gray-200 animate-antiClockWise rounded-full h-[350px] w-[350px]">
             {data?.map((item, idx) => (
               <img
                 src={item?.image}

@@ -33,3 +33,14 @@ export const SLICK_SETTING = {
     },
   ],
 };
+
+export const SLICK_VERTICAL_SETTING = {
+  autoplay: true,
+  vertical: true,
+  infinite: true,
+  verticalSwiping: true,
+  slidesPerRow: 5,
+  slidesToShow: 5,
+  asNavFor: ".slider-preview",
+  focusOnSelect: true,
+};
