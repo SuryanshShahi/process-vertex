@@ -2,7 +2,7 @@ import Button from "@/shared/button/Button";
 import React from "react";
 import { FaCircleCheck } from "react-icons/fa6";
 
-const PricingCard = ({ data, theme }: { theme?: "DARK"; data: any }) => {
+const PricingCard = ({ data, theme }: { data: any; theme?: "DARK" }) => {
   return (
     <div
       className={`hover:-mt-5 duration-500 border h-full border-gray-200 p-7 rounded-3xl space-y-6 lg:max-w-[480px] max-w-[600px] mx-auto ${
@@ -69,7 +69,7 @@ const PricingCard = ({ data, theme }: { theme?: "DARK"; data: any }) => {
         >
           What's included:
         </div>
-        {data?.included?.map((item: string, idx: number) => (
+        {data?.included?.map((item: any, idx: number) => (
           <div key={idx} className="flex gap-x-2">
             <FaCircleCheck
               size={16}
