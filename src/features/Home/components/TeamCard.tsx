@@ -1,29 +1,22 @@
 import React from "react";
 import ImageCard from "./ImageCard";
 
-const TeamCard = ({
-  title,
-  designation,
-  color,
-}: {
-  title: string;
-  designation: string;
-  color: string;
-}) => {
+const TeamCard = ({ data }: { data: any }) => {
   return (
     <div
       className="rounded-xl p-3 flex justify-between w-[260px] cardShadowType3"
-      style={{ backgroundColor: color + "20" }}
+      style={{ backgroundColor: data?.color + "20" }}
     >
       <div className="flex flex-col justify-between">
-        <div className="font-semibold">{title}</div>
+        <div className="font-semibold">{data?.title}</div>
         <div className="text-xs bg-white px-3 text-gray-500 py-1 w-fit rounded-full">
-          {designation}
+          {data?.designation}
         </div>
       </div>
       <ImageCard
         className="h-[60px] w-[60px]"
-        color={color}
+        image={data?.image}
+        color={data?.color}
         height={48}
         weight={48}
       />

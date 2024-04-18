@@ -1,3 +1,4 @@
+import Img from "@/shared/Img";
 import React from "react";
 
 const ImageCard = ({
@@ -5,7 +6,9 @@ const ImageCard = ({
   color,
   height,
   weight,
+  image,
 }: {
+  image: string;
   className: string;
   color: string;
   height: number;
@@ -16,11 +19,12 @@ const ImageCard = ({
       className={`h-[60px] w-[60px] flex justify-center items-center rounded-full ${className}`}
       style={{ backgroundColor: color + "80" }}
     >
-      <img
-        src="https://framerusercontent.com/images/GaxkgrTkzKlxI7B3EJtZp4dabI.png"
+      <Img
+        src={image}
         height={height || 48}
         width={weight || 48}
-        alt=""
+        alt={image}
+        isLocal
       />
     </div>
   );

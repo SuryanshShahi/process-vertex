@@ -86,6 +86,38 @@ const WhySubscribe = () => {
       className: "opacity-20 -mt-14",
     },
   ];
+  const teamsData = [
+    {
+      title: "Suryansh Shahi",
+      designation: "Frontend Developer",
+      image: "/images/icons/emoji1.png",
+      color: "#808080",
+    },
+    {
+      title: "Suryansh Shahi",
+      designation: "Frontend Developer",
+      image: "/images/icons/emoji2.png",
+      color: "#FFFF00",
+    },
+    {
+      title: "Suryansh Shahi",
+      designation: "Frontend Developer",
+      image: "/images/icons/emoji3.png",
+      color: "#008000",
+    },
+    {
+      title: "Suryansh Shahi",
+      designation: "Frontend Developer",
+      image: "/images/icons/emoji4.png",
+      color: "#0000FF",
+    },
+    {
+      title: "Suryansh Shahi",
+      designation: "Frontend Developer",
+      image: "/images/icons/emoji5.png",
+      color: "#FF0000",
+    },
+  ];
   return (
     <div className="space-y-20 customSliderSetting">
       <Heading
@@ -154,16 +186,9 @@ const WhySubscribe = () => {
               custom={{ duration: 0.5 }}
             >
               <Slider {...SLICK_SETTING} speed={5000}>
-                {["#808080", "#FFFF00", "#008000", "#0000FF", "#FF0000"]?.map(
-                  (item, idx) => (
-                    <TeamCard
-                      title="Suryansh Shahi"
-                      designation="Frontend Developer1"
-                      color={item}
-                      key={idx}
-                    />
-                  )
-                )}
+                {teamsData?.map((item, idx) => (
+                  <TeamCard data={item} key={idx} />
+                ))}
               </Slider>
             </motion.div>
             <motion.div
@@ -174,16 +199,9 @@ const WhySubscribe = () => {
               custom={{ duration: 0.5 }}
             >
               <Slider {...SLICK_SETTING} speed={8000}>
-                {["#FF0000", "#0000FF", "#008000", "#FFFF00", "#808080"]?.map(
-                  (item, idx) => (
-                    <TeamCard
-                      title="Suryansh Shahi"
-                      designation="Frontend Developer"
-                      color={item}
-                      key={idx}
-                    />
-                  )
-                )}
+                {teamsData?.map((item, idx) => (
+                  <TeamCard data={item} key={idx} />
+                ))}
               </Slider>
             </motion.div>
           </div>
@@ -231,7 +249,9 @@ const WhySubscribe = () => {
             ))}
           </motion.div>
           <div className="md:mt-auto mt-5 space-y-5 text-center max-w-[400px] mx-auto">
-            <div className="text-black lg:text-2xl sm:text-lg text-[22px]">Flexibility</div>
+            <div className="text-black lg:text-2xl sm:text-lg text-[22px]">
+              Flexibility
+            </div>
             <div className="leading-5 sm:text-sm text-[#717073]">
               Scale up or down, pause, or cancel anytime.
             </div>
