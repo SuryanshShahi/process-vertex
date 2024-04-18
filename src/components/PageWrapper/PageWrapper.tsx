@@ -2,6 +2,7 @@ import { FC, Fragment, PropsWithChildren, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Footer from "../Footer/Footer";
 interface IPageWraps {
   wrapperClass?: string;
   isNavbar?: boolean;
@@ -36,7 +37,7 @@ const PageWrapper: FC<PropsWithChildren<IPageWraps>> = ({
             {/* <IoIosArrowUp color="white" /> */}
           </div>
         )}
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Fragment>
   );

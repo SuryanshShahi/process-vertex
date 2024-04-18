@@ -4,8 +4,9 @@ import {
   SLICK_VERTICAL_SETTING2,
 } from "@/utils/constant";
 import React from "react";
-import { GrConnect } from "react-icons/gr";
 import Slider from "react-slick";
+import TestimonialCard from "../components/TestimonialCard";
+import { FaRegComment } from "react-icons/fa";
 
 const Testimonials = () => {
   const data = [
@@ -16,64 +17,37 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="space-y-6 max-w-[1100px] mx-auto verticalSlider">
-      <div className="text-[#50fa91] flex justify-center gap-x-2">
-        <GrConnect size={20} className="text-[#50fa91]" />
-        <div className="font-bold">Testimonials</div>
-      </div>
-      <div className="text-5xl font-bold text-center">They love Vertex</div>
-      <div className="py-10 maskImageVertical maskImage md:h-screen grid lg:gap-0 gap-6 md:grid-cols-2">
-        <Slider {...SLICK_VERTICAL_SETTING} speed={8000}>
-          {[1, 1, 1, 1, 1]?.map((item, idx) => (
-            <div
-              className="p-10 rounded-[20px] testimonialCard space-y-5 w-full max-w-[520px]"
-              key={idx}
+    <div className="relative">
+      <div className="bubble h-[800px] w-screen absolute opacity-80" />
+
+      <div className="space-y-6 bg-black verticalSlider pt-20">
+        <div className="max-w-[1180px] mx-auto z-10 relative">
+          <div className="text-[#50fa91] flex justify-center gap-x-2">
+            <FaRegComment size={20} className="text-[#50fa91]" />
+            <div className="font-bold">Testimonials</div>
+          </div>
+          <div className="text-5xl font-bold mt-8 text-center text-white">
+            They love Vertex
+          </div>
+          <div className="py-10 md:px-5 md:max-w-full max-w-[520px] mx-auto maskImageVertical mt-10 md:h-screen text-white grid lg:gap-0 gap-6 md:grid-cols-2">
+            <Slider {...SLICK_VERTICAL_SETTING} speed={8000}>
+              {[1, 1, 1, 1, 1]?.map((item, idx) => (
+                <TestimonialCard />
+              ))}
+            </Slider>
+            <Slider
+              {...SLICK_VERTICAL_SETTING2}
+              speed={8000}
+              className="md:!block !hidden"
             >
-              <p className="text-xl leading-[30px]">
-                Redesigning our website with Vertex has been a game-changer! The
-                transformation is unbelievable – not only is it user-friendly,
-                but the visual appeal is off the charts. Absolutely wowed by the
-                results!
-              </p>
-              <div className="flex items-center gap-x-3">
-                <img
-                  alt=""
-                  className="h-10 w-10 rounded-full"
-                  src="https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png"
-                />
-                <div className="font-bold text-lg">Tiana Roses</div>
-              </div>
-            </div>
-          ))}
-        </Slider>
-        <Slider
-          {...SLICK_VERTICAL_SETTING2}
-          speed={8000}
-          className="md:block hidden"
-        >
-          {[1, 1, 1, 1, 1]?.map((item, idx) => (
-            <div
-              className="p-10 rounded-[20px] testimonialCard space-y-5 w-full max-w-[520px]"
-              key={idx}
-            >
-              <p className="text-xl leading-[30px]">
-                Redesigning our website with Vertex has been a game-changer! The
-                transformation is unbelievable – not only is it user-friendly,
-                but the visual appeal is off the charts. Absolutely wowed by the
-                results!
-              </p>
-              <div className="flex items-center gap-x-3">
-                <img
-                  alt=""
-                  className="h-10 w-10 rounded-full"
-                  src="https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png"
-                />
-                <div className="font-bold text-lg">Tiana Roses</div>
-              </div>
-            </div>
-          ))}
-        </Slider>
+              {[1, 1, 1, 1, 1]?.map((item, idx) => (
+                <TestimonialCard />
+              ))}
+            </Slider>
+          </div>
+        </div>
       </div>
+      <div className="bubbleVertical md:block hidden h-[800px] opacity-70 max-w-[800px] w-full absolute -left-20 bottom-0 rotate-180" />
     </div>
   );
 };

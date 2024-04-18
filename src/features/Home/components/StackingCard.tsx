@@ -23,7 +23,7 @@ const StackingCard = ({
 }) => {
   return (
     <div
-      className={`bg-white min-h-[650px] lg:p-10 sm:p-6 p-4 stackingCard sm:rounded-[32px] rounded-3xl ${className}`}
+      className={`bg-white md:min-h-[650px] min-h-[832px] lg:p-10 sm:p-6 p-4 stackingCard sm:rounded-[32px] rounded-3xl ${className}`}
     >
       <div className="grid md:grid-cols-2 lg:gap-5 min-h-full gap-10">
         <div className="space-y-5 max-w-[450px]">
@@ -33,7 +33,7 @@ const StackingCard = ({
             </div>
             <div className="text-lg  text-[#717073]">{headerText}</div>
           </div>
-          <div className="text-5xl  leading-[58px]">{title}</div>
+          <div className="text-4xl leading-[120%]">{title}</div>
           <p className=" text-[#87868a] leading-6">{desctiption}</p>
           {btnName && <Button>{btnName}</Button>}
           {leftChildren}

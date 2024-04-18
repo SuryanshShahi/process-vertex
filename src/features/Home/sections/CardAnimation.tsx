@@ -74,7 +74,7 @@ const CardAnimation = () => {
         />
 
         <div className="lg:h-[3000px] h-[4000px] space-y-20">
-          <div className="md:top-[20%] sm:top-[10%] top-[10%] sticky">
+          <div className="md:top-[20%] sm:top-[10%] top-[6%] sticky">
             <motion.div
               viewport={{ once: false, amount: 0.1 }}
               variants={HeroVariants.STACKING_CARD}
@@ -113,7 +113,7 @@ const CardAnimation = () => {
               />
             </motion.div>
           </div>
-          <div className="md:top-[25%] sm:top-[15%] top-[10%] sticky">
+          <div className="md:top-[25%] sm:top-[15%] top-[6%] sticky">
             <motion.div
               viewport={{ once: false, amount: 0.1 }}
               variants={HeroVariants.STACKING_CARD}
@@ -142,7 +142,7 @@ const CardAnimation = () => {
                   </div>
                 }
                 rightChildren={
-                  <div className="max-w-[350px] w-full space-y-4 m-auto md:overflow-x-hidden overflow-x-hidden sm:overflow-x-visible lg:overflow-x-visible  lg:py-0 lg:px-0">
+                  <div className="max-w-[350px] w-full space-y-4 m-auto md:overflow-x-hidden p-2 pb-8 overflow-x-hidden sm:overflow-x-visible lg:overflow-x-visible  lg:py-0 lg:px-0">
                     <motion.div
                       viewport={{ once: false, amount: 0.3 }}
                       variants={HeroVariants.RIGHT}
@@ -195,7 +195,7 @@ const CardAnimation = () => {
                       whileInView="show"
                       custom={{ delay: 2, duration: 0.8 }}
                       initial="hidden"
-                      className="border flex items-center gap-x-3 justify-center border-gray-200 p-4 rounded-[18px] cardShadow  bg-gray-50"
+                      className="border flex items-center gap-x-3 justify-center border-gray-200 p-4 rounded-[18px] cardShadow bg-gray-50"
                     >
                       <div className="h-[30px] w-[30px] flex justify-center items-center rounded-full bg-[rgba(222,222,222,0.8)]">
                         <GoPlus size={16} />
@@ -209,7 +209,7 @@ const CardAnimation = () => {
               />
             </motion.div>
           </div>
-          <div className="md:top-[30%] sm:top-[20%] top-[10%] sticky customSliderSetting">
+          <div className="md:top-[30%] sm:top-[20%] top-[6%] sticky customSliderSetting">
             <motion.div
               viewport={{ once: false, amount: 0.1 }}
               variants={HeroVariants.STACKING_CARD}
@@ -235,7 +235,7 @@ const CardAnimation = () => {
               />
             </motion.div>
           </div>
-          <div className="md:top-[35%] sm:top-[25%] top-[10%] sticky">
+          <div className="md:top-[35%] sm:top-[25%] top-[6%] sticky">
             <motion.div
               viewport={{ once: false, amount: 0.1 }}
               variants={HeroVariants.STACKING_CARD}

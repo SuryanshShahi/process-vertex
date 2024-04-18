@@ -9,11 +9,11 @@ const Home = () => {
   return (
     <div className="space-y-20">
       <CardAnimation />
+      <Integration />
       <div className="container mx-auto space-y-20 px-5">
         <WhySubscribe />
         <OurPricing />
       </div>
-      <Integration />
       <Testimonials />
     </div>
   );

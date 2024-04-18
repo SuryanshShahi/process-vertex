@@ -122,11 +122,28 @@
 
 .integrationBg {
   background: radial-gradient(
-    26.400000000000002% 45.2% at 50% 100%,
-    rgba(80, 250, 145, 0.35) 0%,
-    rgb(0, 0, 0) 100%
+    45% 80% at 50% 100%,
+    rgba(200, 70, 229, 0.35) 0,
+    #000 100%
   );
 }
 .testimonialCard {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 30px -20px;
+  background-color: rgb(17, 17, 17);
+}
+
+.bubble {
+  background: radial-gradient(
+    75% 60% at 100% 30%,
+    rgba(200, 70, 229, 0.35) 0,
+    #000 100%
+  );
+}
+
+.bubbleVertical {
+  background: radial-gradient(
+    75% 60% at 65% 30%,
+    rgba(200, 70, 229, 0.35) 0,
+    #000 100%
+  );
 }

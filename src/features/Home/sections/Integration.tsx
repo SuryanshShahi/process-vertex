@@ -50,17 +50,17 @@ const Integration = () => {
     },
   ];
   return (
-    <div className="bg-black space-y-6 flex flex-col items-center sm:py-40 py-20">
+    <div className="bg-black space-y-6 flex flex-col items-center pt-20 relative lg:h-full sm:h-[600px] h-[500px]">
       <div className="text-[#50fa91] flex gap-x-2">
         <GrConnect size={20} className="text-[#50fa91]" />
         <div className="font-bold">Integrations</div>
       </div>
-      <div className="text-white text-5xl font-bold text-center">Seamless connections</div>
+      <div className="text-white md:text-5xl text-3xl font-bold text-center">Seamless connections</div>
       <p className="opacity-70 text-white max-w-[300px] text-center">
         Integrate effortlessly with your favorite tools and platforms.
       </p>
 
-      <div className="h-[350px] md:scale-100 sm:scale-75 scale-50 overflow-hidden sm:p-20 p-10 md:w-full integrationBg">
+      <div className="max-h-[350px] md:scale-100 sm:scale-75 lg:relative absolute md:-bottom-0 sm:-bottom-11 -bottom-[86px] scale-50 overflow-hidden sm:p-20 p-10 md:w-full integrationBg">
         <div className="relative flex justify-center items-center">
           <div className="animate-clockWise border border-gray-200 flex justify-center items-center relative rounded-full h-[600px] w-[600px]">
             {data?.map((item, idx) => (

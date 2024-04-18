@@ -4,7 +4,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="flex p-10 sticky top-0 z-20">
+    <div className="flex md:p-10 p-5 sticky top-0 z-20">
       <div className="flex gap-x-3 items-center">
         <Img
           height={32}
