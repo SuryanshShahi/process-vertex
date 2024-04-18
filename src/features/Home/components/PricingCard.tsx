@@ -5,7 +5,7 @@ import { FaCircleCheck } from "react-icons/fa6";
 const PricingCard = ({ data, theme }: { theme?: "DARK"; data: any }) => {
   return (
     <div
-      className={`hover:-mt-5 duration-500 border border-gray-200 p-7 rounded-3xl space-y-6 lg:max-w-[480px] max-w-[600px] mx-auto ${
+      className={`hover:-mt-5 duration-500 border h-full border-gray-200 p-7 rounded-3xl space-y-6 lg:max-w-[480px] max-w-[600px] mx-auto ${
         theme === "DARK" ? "bg-[rgb(19,19,20)]" : "bg-white"
       }`}
     >
@@ -21,7 +21,9 @@ const PricingCard = ({ data, theme }: { theme?: "DARK"; data: any }) => {
             {data?.headerIcon}
           </div>
           <div>
-            <div className="text-lg">{data?.title}</div>
+            <div className={`text-lg ${theme === "DARK" ? "text-white" : ""}`}>
+              {data?.title}
+            </div>
             <div className="text-[#646466] text-sm">{data?.subTitle}</div>
           </div>
         </div>
@@ -68,12 +70,23 @@ const PricingCard = ({ data, theme }: { theme?: "DARK"; data: any }) => {
           What's included:
         </div>
         {data?.included?.map((item: string, idx: number) => (
-          <div key={idx} className="flex items-center gap-x-2">
+          <div key={idx} className="flex gap-x-2">
             <FaCircleCheck
               size={16}
-              className={`${theme === "DARK" ? "text-white" : "text-black"}`}
+              className={`mt-1 ${
+                theme === "DARK" ? "text-white" : "text-black"
+              }`}
             />
-            <div className="text-sm text-[#87868a]">{item}</div>
+            <div
+              className={`text-sm font-medium ${
+                theme === "DARK" ? "text-white" : "text-black"
+              }`}
+            >
+              {item?.title}:{" "}
+              <span className="text-[#87868a] font-normal">
+                {item?.subtitle}
+              </span>
+            </div>
           </div>
         ))}
       </div>

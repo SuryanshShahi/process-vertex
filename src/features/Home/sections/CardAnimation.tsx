@@ -96,7 +96,7 @@ const CardAnimation = () => {
                       <div className="space-y-4">
                         <div className="flex items-end">
                           <div className="pricing-text text-[64px] font-medium leading-[77px]">
-                            $4,999
+                            $1,899
                           </div>
                           <span className="text-white">/ monthly</span>
                         </div>
