@@ -119,10 +119,10 @@ const WhySubscribe = () => {
     },
   ];
   return (
-    <div className="space-y-20 customSliderSetting">
+    <div className="space-y-20 customSliderSetting font-medium">
       <Heading
         className="!text-black"
-        title="Why subscribe?"
+        title="Why subscribe? "
         subTitle="We streamline the design process by breaking down projects into smaller, hyper-focused design tasks."
       />
 

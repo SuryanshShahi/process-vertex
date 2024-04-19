@@ -51,8 +51,8 @@ const Integration = () => {
   ];
   return (
     <div className="bg-black space-y-6 flex flex-col items-center pt-20 relative lg:h-full sm:h-[600px] h-[500px]">
-      <div className="text-[#50fa91] flex gap-x-2">
-        <GrConnect size={20} className="text-[#50fa91]" />
+      <div className="text-[#EEE] flex gap-x-2">
+        <GrConnect size={20} className="text-[#EEE]" />
         <div className="font-bold">Integrations</div>
       </div>
       <div className="text-white md:text-5xl text-3xl font-bold text-center">Seamless connections</div>

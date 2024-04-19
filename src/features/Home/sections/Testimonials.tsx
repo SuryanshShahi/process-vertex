@@ -22,12 +22,12 @@ const Testimonials = () => {
 
       <div className="space-y-6 bg-black verticalSlider pt-20">
         <div className="max-w-[1180px] mx-auto z-10 relative">
-          <div className="text-[#50fa91] flex justify-center gap-x-2">
-            <FaRegComment size={20} className="text-[#50fa91]" />
+          <div className="text-[#EEE] flex justify-center gap-x-2">
+            <FaRegComment size={20} className="text-[#EEE]" />
             <div className="font-bold">Testimonials</div>
           </div>
           <div className="text-5xl font-bold mt-8 text-center text-white">
-            They love Vertex
+            They love AIXGrow
           </div>
           <div className="py-10 md:px-5 md:max-w-full max-w-[520px] mx-auto maskImageVertical mt-10 md:h-screen text-white grid lg:gap-0 gap-6 md:grid-cols-2">
             <Slider {...SLICK_VERTICAL_SETTING} speed={8000}>

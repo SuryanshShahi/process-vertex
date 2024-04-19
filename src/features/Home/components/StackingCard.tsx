@@ -23,7 +23,7 @@ const StackingCard = ({
 }) => {
   return (
     <div
-      className={`bg-white md:min-h-[650px] min-h-[832px] lg:p-10 sm:p-6 p-4 stackingCard sm:rounded-[32px] rounded-3xl ${className}`}
+      className={`bg-white md:min-h-[650px] min-h-[832px] lg:p-10 sm:p-6 p-4 stackingCard sm:rounded-[32px] rounded-3xl ${className} font-medium`}
     >
       <div className="grid md:grid-cols-2 lg:gap-5 min-h-full gap-10">
         <div className="space-y-5 max-w-[450px]">

@@ -9,9 +9,9 @@ import { motion } from "framer-motion";
 
 const OurPricing = () => {
   return (
-    <div className="space-y-20 overflow-x-hidden">
+    <div className="space-y-20 overflow-x-hidden font-medium">
       <Heading
-        title="Our Pricing."
+        title="Our Pricing. "
         className="!text-black"
         subTitle="No lengthy contracts. No managing employees. No headaches."
       />
