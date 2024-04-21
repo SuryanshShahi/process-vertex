@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Inter-Tight;
+  src: url(/font/InterTight-VariableFont_wght.ttf);
+}
+
+* {
+  scroll-behavior: smooth;
+  font-family: Inter-Tight;
+}
+
 .howWeWork {
   align-items: center;
   background: linear-gradient(
@@ -134,8 +144,8 @@
 
 .integrationBg {
   background: radial-gradient(
-    45% 80% at 50% 100%,
-    rgba(200, 70, 229, 0.35) 0,
+    20% 50% at 50% 100%,
+    rgba(200, 70, 229, 0.45) 0,
     #000 100%
   );
 }
