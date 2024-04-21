@@ -30,6 +30,18 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.hero-text {
+  background: linear-gradient(
+    105deg,
+    rgb(74, 15, 252) 0%,
+    rgb(252, 0, 252) 25.5507%,
+    rgb(255, 115, 131) 56.9942%,
+    rgb(255, 146, 3) 77.3596%,
+    rgb(255, 166, 166) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .stackingCard {
   transform: perspective(1200px) translateX(0px) translateY(0px) scale(0.95)
     rotate(0deg) rotateX(0deg) rotateY(0deg) skewX(0deg) skewY(0deg)

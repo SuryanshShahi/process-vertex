@@ -1,12 +1,11 @@
 import React from "react";
 import Button from "@/shared/button/Button";
-import { FaUserAlt, FaYoutube } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 import { MdCheckCircleOutline, MdEdit } from "react-icons/md";
 import { IoIosAttach, IoMdCheckmark } from "react-icons/io";
 import { FaCirclePause } from "react-icons/fa6";
 import { Variants, motion } from "framer-motion";
 import StackingCard from "../components/StackingCard";
-import Heading from "../components/Heading";
 import { HeroVariants } from "@/utils/framer";
 import { BiComment } from "react-icons/bi";
 import { GoPlus } from "react-icons/go";

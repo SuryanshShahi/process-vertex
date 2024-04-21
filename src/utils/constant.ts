@@ -34,6 +34,16 @@ export const SLICK_SETTING = {
   ],
 };
 
+export const HERO_VERTICAL_SETTING = {
+  autoplay: true,
+  vertical: true,
+  verticalSwiping: true,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+};
+
 export const SLICK_VERTICAL_SETTING = {
   autoplay: true,
   vertical: true,

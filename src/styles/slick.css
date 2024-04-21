@@ -132,3 +132,11 @@
 .verticalSlider .slick-list {
   margin: -12px 0;
 }
+
+.heroTextSlider .slick-list {
+  padding: 0 !important;
+}
+
+.heroTextSlider .slick-slide {
+  margin: 0 10px !important;
+}
