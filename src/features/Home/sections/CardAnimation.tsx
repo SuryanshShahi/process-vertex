@@ -13,6 +13,7 @@ import ImageCard from "../components/ImageCard";
 import ProductCard from "../components/ProductCard";
 import Slider from "react-slick";
 import { SLICK_SETTING } from "@/utils/constant";
+import Heading from "../components/Heading";
 
 const CardAnimation = () => {
   const width = typeof window !== "undefined" && window?.innerWidth;
@@ -66,9 +67,10 @@ const CardAnimation = () => {
   return (
     <div className="howWeWork pt-[160px] pb-[60px]">
       <div className="container mx-auto sm:px-5 px-4 space-y-20">
-        <div className="text-center md:text-[64px] sm:text-5xl text-4xl md:leading-[77px] text-white font-medium">
-          We partner with forward-thinking brands to create compelling stories.
-        </div>
+        <Heading
+          title="How we work?"
+          subTitle="We streamline the design workflow by breaking down projects into bite-sized design tasks."
+        />
 
         <div className="lg:h-[3000px] h-[4000px] space-y-20">
           <div className="md:top-[20%] sm:top-[10%] top-[6%] sticky">

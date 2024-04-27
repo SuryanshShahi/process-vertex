@@ -1,10 +1,29 @@
 import Button from "@/shared/button/Button";
-import { HERO_VERTICAL_SETTING, SLICK_SETTING } from "@/utils/constant";
+import { HERO_VERTICAL_SETTING } from "@/utils/constant";
 import React from "react";
 import { CiStopwatch } from "react-icons/ci";
 import Slider from "react-slick";
 
 const HeroSection = () => {
+  // const getData = () => {
+  //   axios
+  //     .get(
+  //       `https://graph.instagram.com/me?fields=id,username,name&access_token=${process.env.NEXT_PUBLIC_ACCESS_TOKEN}`
+  //     )
+  //     .then((e) => {
+  //       console.log({ e });
+  //       axios
+  //         .get(
+  //           `https://graph.instagram.com/${e?.data?.id}?fields=id,media_type,media_url,username,timestamp&access_token=${process.env.NEXT_PUBLIC_ACCESS_TOKEN}`
+  //         )
+  //         .then((res) => console.log({ fsssss: res }))
+  //         .catch((eee) => console.log(eee));
+  //     })
+  //     .catch((err) => console.log(err));
+  // };
+  // useEffect(() => {
+  //   getData();
+  // }, []);
   return (
     <div className="max-w-[450px] space-y-6 mt-10">
       <div className="text-black relative font-medium sm:text-[64px] sm:leading-[77px] text-5xl">
@@ -29,14 +48,9 @@ const HeroSection = () => {
         spots available
         <CiStopwatch size={18} />
       </div>
-      <div className="flex gap-x-4">
-        <Button className="border hover:border-gray-100 hover:bg-transparent hover:!text-black">
-          View Pricing
-        </Button>
-        <Button className="bg-transparent !text-black border border-gray-100">
-          Book a Call
-        </Button>
-      </div>
+      <Button className="border hover:border-gray-100 hover:bg-transparent text-white hover:text-black">
+        View Pricing
+      </Button>
     </div>
   );
 };
