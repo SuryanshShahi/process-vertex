@@ -53,7 +53,7 @@ const PricingCard = ({ data, theme }: { data: any; theme?: "DARK" }) => {
         <div className="text-[#87868a] text-sm ">Pause or cancel anytime</div>
       </div>
       <Button
-        className={`py-2 w-full !text-black border ${
+        className={`py-2 w-full !text-black border hover:!text-white ${
           theme === "DARK"
             ? "bg-white hover:bg-transparent border-white"
             : "bg-transparent border-gray-200"
