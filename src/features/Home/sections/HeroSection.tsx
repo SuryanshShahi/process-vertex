@@ -48,9 +48,14 @@ const HeroSection = () => {
         spots available
         <CiStopwatch size={18} />
       </div>
-      <Button className="border hover:border-gray-100 hover:bg-transparent text-white hover:text-black">
-        View Pricing
-      </Button>
+      <div className="flex gap-x-4">
+        <Button className="border hover:border-gray-100 hover:bg-transparent text-white hover:!text-black">
+          View Pricing
+        </Button>
+        <Button className="bg-transparent hover:!text-white !text-black border border-gray-100">
+          Book a Call
+        </Button>
+      </div>
     </div>
   );
 };
