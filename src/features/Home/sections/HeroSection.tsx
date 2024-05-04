@@ -55,9 +55,12 @@ const HeroSection = () => {
         <Button className="border hover:border-gray-100 hover:bg-transparent text-white hover:!text-black">
           View Pricing
         </Button>
-        <Button className="bg-transparent hover:!text-white !text-black border border-gray-100">
-          Book a Call
-        </Button>
+
+        <a href="#Contact">
+          <Button className="bg-transparent hover:!text-white !text-black border border-gray-100">
+            Book a Call
+          </Button>
+        </a>
       </div>
     </div>
   );

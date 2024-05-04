@@ -37,7 +37,9 @@ const PageWrapper: FC<PropsWithChildren<IPageWraps>> = ({
             onClick={() => window.scroll(0, 0)}
           ></div>
         )}
-        <CalendlyEmbed url="https://calendly.com/designkrunch/30min" />
+        <div id="Contact">
+          <CalendlyEmbed url="https://calendly.com/designkrunch/30min" />
+        </div>
         <Footer />
       </div>
     </Fragment>

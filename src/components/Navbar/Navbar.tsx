@@ -17,16 +17,16 @@ const Navbar = () => {
         <div className="text-2xl text-black">Process</div>
       </div>
       <div className="tabBar rounded-full items-center lg:flex hidden pl-5 pr-3 py-3 mx-auto gap-x-3">
-        {["About", "Work", "Contact", "Pricing", "Testimonials", "FAQs"]?.map(
-          (item, idx) => (
-            <div key={idx} className="text-sm">
-              {item}
-            </div>
-          )
-        )}
-        <Button size="sm" className="px-3 py-2">
-          Book a Call
-        </Button>
+        {["About", "Contact", "Pricing", "Testimonials"]?.map((item, idx) => (
+          <a href={`#${item}`} key={idx} className="text-sm">
+            {item}
+          </a>
+        ))}
+        <a href="#Contact">
+          <Button size="sm" className="px-3 py-2">
+            Book a Call
+          </Button>
+        </a>
       </div>
     </div>
   );

@@ -9,15 +9,8 @@ import TestimonialCard from "../components/TestimonialCard";
 import { FaRegComment } from "react-icons/fa";
 
 const Testimonials = () => {
-  const data = [
-    {
-      image:
-        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
-      className: "top-[40%] -left-[5%]",
-    },
-  ];
   return (
-    <div className="relative">
+    <div className="relative" id="Testimonials">
       <div className="bubble h-[800px] w-screen absolute opacity-80" />
 
       <div className="space-y-6 bg-black verticalSlider pt-20">
