@@ -1,3 +1,27 @@
+export const SLICK_SETTING_HERO = {
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 0,
+  cssEase: "linear",
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 990,
+      settings: {
+        slidesToShow: 1.4,
+      },
+    },
+    {
+      breakpoint: 880,
+      settings: {
+        slidesToShow: 0.8,
+      },
+    },
+  ],
+};
+
 export const SLICK_SETTING = {
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -68,3 +92,6 @@ export const SLICK_VERTICAL_SETTING2 = {
   autoplaySpeed: 0,
   arrows: false,
 };
+
+export const ACCESS_TOKEN =
+  "IGQWRQN1FJWWdra0stTnZApNFlBZAV9TUXpYTlVNZAWZAzYVZA2YlpDazJlSDdBTnhUZAXd1aHlsVC1WOTlfektjTmZAsX1N5LVVXS0d2Rkt6Q2kzVHYwX01QcVd1eWxPVHE1cEJRRzViTDM2VVVHdGhMSUQxb1pKWUNyVk0ZD";
