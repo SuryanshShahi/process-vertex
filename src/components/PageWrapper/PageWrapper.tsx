@@ -28,11 +28,6 @@ const PageWrapper: FC<PropsWithChildren<IPageWraps>> = ({
 
   return (
     <Fragment>
-      {/* <BeholdWidget
-        onLoad={() => console.log("Loaded!")}
-        feedId=
-      /> */}
-
       <div className="animate-bottom">
         {isNavbar && <Navbar />}
         <div className={`bg-white ${wrapperClass}`}>{children}</div>
