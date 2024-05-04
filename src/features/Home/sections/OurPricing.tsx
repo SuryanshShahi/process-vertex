@@ -22,6 +22,7 @@ const OurPricing = () => {
           custom={{ duration: 0.4 }}
           whileInView="show"
           initial="hidden"
+          className="hover:-top-5 top-0 relative duration-500"
         >
           <PricingCard
             data={{
@@ -35,8 +36,7 @@ const OurPricing = () => {
                   size={26}
                 />
               ),
-              description:
-                "Scalable Growth for Emerging Brands",
+              description: "Scalable Growth for Emerging Brands",
               price: "$1,899",
               included: [
                 {
@@ -77,6 +77,7 @@ const OurPricing = () => {
           whileInView="show"
           initial="hidden"
           custom={{ duration: 0.4 }}
+          className="hover:-top-5 top-0 relative duration-500"
         >
           <PricingCard
             theme="DARK"

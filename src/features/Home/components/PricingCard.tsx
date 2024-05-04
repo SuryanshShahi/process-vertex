@@ -5,7 +5,7 @@ import { FaCircleCheck } from "react-icons/fa6";
 const PricingCard = ({ data, theme }: { data: any; theme?: "DARK" }) => {
   return (
     <div
-      className={`hover:-mt-5 duration-500 border h-full border-gray-200 p-7 rounded-3xl space-y-6 lg:max-w-[480px] max-w-[600px] mx-auto ${
+      className={`duration-500 border h-full border-gray-200 p-7 rounded-3xl space-y-6 lg:max-w-[480px] max-w-[600px] mx-auto ${
         theme === "DARK" ? "bg-[rgb(19,19,20)]" : "bg-white"
       }`}
     >
