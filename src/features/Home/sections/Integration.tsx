@@ -63,14 +63,14 @@ const Integration = () => {
         Integrate effortlessly with your favorite tools and platforms.
       </p>
 
-      <div className="max-h[350px] md:scale-100 sm:scale-75 lg:relative absolute md:-bottom-0 sm:-bottom-11 -bottom-[86px] scale-50 overflow-hidden sm:p-20 p-10 md:w-full integrationBg">
+      <div className="max-h-[350px] md:scale-100 sm:scale-75 lg:relative absolute md:-bottom-0 sm:-bottom-11 -bottom-[86px] scale-50 overflow-hidden sm:p-20 p-10 md:w-full integrationBg">
         <div className="relative flex justify-center items-center">
           <div className="animate-clockWise border border-gray-200 flex justify-center items-center relative rounded-full h-[600px] w-[600px]">
             {data?.map((item, idx) => (
               <img
                 src={item?.image}
                 key={idx}
-                className={`h-12 w-12 absolute ${item?.className}`}
+                className={`h-12 w-12 absolute -rotate-90 ${item?.className}`}
               />
             ))}
           </div>
@@ -79,7 +79,7 @@ const Integration = () => {
               <img
                 src={item?.image}
                 key={idx}
-                className={`h-12 w-12 absolute ${item?.innerCircleClass}`}
+                className={`h-12 w-12 absolute -rotate-90 ${item?.innerCircleClass}`}
               />
             ))}
           </div>
