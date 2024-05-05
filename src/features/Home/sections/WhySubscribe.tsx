@@ -20,7 +20,7 @@ const WhySubscribe = () => {
           size={48}
         />
       ),
-      className: "opacity-20",
+      className: "sm:opacity-20 opacity-0",
     },
     {
       name: "You",
@@ -31,7 +31,7 @@ const WhySubscribe = () => {
           size={48}
         />
       ),
-      className: "absolute right-5 -top-10 opacity-20",
+      className: "absolute sm:right-5 sm:-top-10 sm:opacity-20 opacity-0",
     },
     {
       name: "You",
@@ -57,7 +57,7 @@ const WhySubscribe = () => {
           alt=""
         />
       ),
-      className: "-left-10 absolute -mt-16 opacity-20",
+      className: "-left-10 absolute -mt-16 sm:opacity-20 opacity-0",
     },
     {
       name: "Process",
@@ -72,7 +72,7 @@ const WhySubscribe = () => {
           alt=""
         />
       ),
-      className: "-left-[5%] z-10 ml-auto relative mt-5",
+      className: "sm:-left-[5%] z-10 sm:ml-auto mx-auto relative mt-5",
     },
     {
       name: "You",
@@ -83,7 +83,7 @@ const WhySubscribe = () => {
           size={48}
         />
       ),
-      className: "opacity-20 -mt-14",
+      className: "sm:opacity-20 opacity-0 -mt-14",
     },
   ];
   const teamsData = [

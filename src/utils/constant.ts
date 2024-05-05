@@ -19,6 +19,12 @@ export const SLICK_SETTING_HERO = {
         slidesToShow: 0.8,
       },
     },
+    {
+      breakpoint: 450,
+      settings: {
+        slidesToShow: 0.7,
+      },
+    },
   ],
 };
 

@@ -27,23 +27,25 @@ const Home = () => {
         <Slider
           {...SLICK_SETTING_HERO}
           speed={10000}
-          className="mt-12 max-h-[590px] maskImage"
+          className="mt-12 sm:max-h-[590px] max-h-[490px] maskImage"
         >
           {[
             "/images/slide1.jpg",
             "/images/slide2.png",
             "/images/slide3.jpg",
             "/images/slide4.png",
+            "/images/slide4.png",
             "/images/slide5.jpg",
             "/images/slide6.png",
           ]?.map((item, idx) => (
             <Img
+              key={idx}
               src={item}
               height={550}
               width={880}
               alt=""
               isLocal
-              className="h-[550px] !w-[880px] rounded-2xl shadow-lg shadow-neutral-300"
+              className="sm:h-[550px] h-[450px] object-cover w-[880px] rounded-2xl shadow-lg shadow-neutral-300"
             />
           ))}
         </Slider>
