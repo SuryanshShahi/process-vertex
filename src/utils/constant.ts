@@ -4,6 +4,7 @@ export const SLICK_SETTING_HERO = {
   infinite: true,
   autoplay: true,
   autoplaySpeed: 0,
+  speed: 10000,
   cssEase: "linear",
   arrows: false,
   responsive: [

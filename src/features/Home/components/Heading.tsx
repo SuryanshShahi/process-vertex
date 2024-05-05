@@ -11,7 +11,7 @@ const Heading = ({
 }) => {
   return (
     <div
-      className={`text-white xl:text-[32px] text-2xl mx-auto max-w-[600px] text-center leading-[35px] ${className}`}
+      className={`text-white xl:text-[32px] text-2xl mx-auto sm:max-w-[600px] max-w-[450px] text-center leading-[35px] ${className}`}
     >
       {title}
       <span className="text-[#adacb0]">{subTitle}</span>

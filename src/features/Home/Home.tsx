@@ -18,7 +18,7 @@ const Home = () => {
         <HeroSection />
       </div>
       <motion.div
-        viewport={{ once: false, amount: 0 }}
+        viewport={{ once: false }}
         variants={HeroVariants.CARD}
         whileInView="show"
         initial="hidden"
@@ -33,7 +33,6 @@ const Home = () => {
             "/images/slide1.jpg",
             "/images/slide2.png",
             "/images/slide3.jpg",
-            "/images/slide4.png",
             "/images/slide4.png",
             "/images/slide5.jpg",
             "/images/slide6.png",

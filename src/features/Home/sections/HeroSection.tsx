@@ -3,6 +3,8 @@ import { HERO_VERTICAL_SETTING } from "@/utils/constant";
 import React from "react";
 import { CiStopwatch } from "react-icons/ci";
 import Slider from "react-slick";
+import { motion } from "framer-motion";
+import { HeroVariants } from "@/utils/framer";
 
 const HeroSection = () => {
   // const getData = () => {
@@ -26,32 +28,62 @@ const HeroSection = () => {
   // }, []);
   return (
     <div className="space-y-6 mt-10">
-      <div className="text-black relative font-medium lg:text-[64px] lg:leading-[77px] sm:leading-[60px] sm:text-5xl text-3xl">
+      <motion.div
+        viewport={{ once: false }}
+        variants={HeroVariants.CARD}
+        whileInView="show"
+        initial="hidden"
+        custom={{ delay: 1, duration: 0.4}}
+        className="text-black relative font-medium lg:text-[64px] lg:leading-[77px] sm:leading-[60px] sm:text-5xl text-3xl"
+      >
         <div>Building Massive Audiences</div>
         <div className="flex heroTextSlider">
           <div>Achieving</div>
           <Slider
             {...HERO_VERTICAL_SETTING}
-            className="sm:max-w-[300px] max-w-[150px]"
+            className="sm:max-w-[475px] max-w-[230px]"
           >
-            {["Startups", "Founders", "Agencies"]?.map((item, idx) => (
-              <span className="hero-text" key={idx}>
-                {item}
-              </span>
-            ))}
+            {["1 Bn+ Views", "5 Mn+ Followers", "∞ Growth"]?.map(
+              (item, idx) => (
+                <span className="hero-text" key={idx}>
+                  {item}
+                </span>
+              )
+            )}
           </Slider>
         </div>
-      </div>
-      <p className="text-[#87868a] text-lg max-w-[450px]">
+      </motion.div>
+      <motion.p
+        viewport={{ once: false }}
+        variants={HeroVariants.CARD}
+        whileInView="show"
+        initial="hidden"
+        custom={{ delay: 2, duration: 0.4}}
+        className="text-[#87868a] text-lg max-w-[450px]"
+      >
         Get instant access to unlimited design requests and revisions from a
         top-tier creative team for a flat monthly fee. Pause or cancel anytime.
-      </p>
-      <div className="gap-x-2 flex items-center text-[#646464] text-sm">
+      </motion.p>
+      <motion.div
+        viewport={{ once: false }}
+        variants={HeroVariants.CARD}
+        whileInView="show"
+        initial="hidden"
+        custom={{ delay: 3, duration: 0.4}}
+        className="gap-x-2 flex items-center text-[#646464] text-sm"
+      >
         <div className="bg-[#09e884] h-2 w-2 rounded-full animate-ping" />2
         spots available
         <CiStopwatch size={18} />
-      </div>
-      <div className="flex gap-x-4">
+      </motion.div>
+      <motion.div
+        viewport={{ once: false }}
+        variants={HeroVariants.CARD}
+        whileInView="show"
+        initial="hidden"
+        custom={{ delay: 4, duration: 0.4}}
+        className="flex gap-x-4"
+      >
         <Button className="border hover:border-gray-100 hover:bg-transparent text-white hover:!text-black">
           View Pricing
         </Button>
@@ -61,7 +93,7 @@ const HeroSection = () => {
             Book a Call
           </Button>
         </a>
-      </div>
+      </motion.div>
     </div>
   );
 };
