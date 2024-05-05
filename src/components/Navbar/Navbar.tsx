@@ -44,7 +44,7 @@ const Navbar = () => {
 
       {isActive && (
         <div
-          className="bg-white h-screen w-screen space-y-6 py-2 px-4 fixed top-0"
+          className="bg-white h-full w-screen space-y-6 p-4 fixed top-0"
           id="sideBar"
         >
           <div className="flex gap-x-3 items-center">
