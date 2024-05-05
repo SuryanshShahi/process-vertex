@@ -5,47 +5,47 @@ const Integration = () => {
   const data = [
     {
       image:
-        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
+        "/images/social-media-platforms/Facebook.png",
       className: "top-[40%] -left-[5%]",
     },
     {
       image:
-        "https://framerusercontent.com/images/MVekyQ8LsrdErSmPHObOHdYukIo.png",
+        "/images/social-media-platforms/Instagram.png",
       className: "top-[10%] left-[8%]",
     },
     {
       image:
-        "https://framerusercontent.com/images/HSCCIKwzqEj4dkYb0eaoQbP0c.png",
+        "/images/social-media-platforms/Twitter.png",
       className: "right-[50%] -top-[5%]",
     },
     {
       image:
-        "https://framerusercontent.com/images/O1eC8TJfwFgqCrRducRcrawTuw.png",
+        "/images/social-media-platforms/MetaAds.png",
       className: "right-[15%] top-[4%]",
     },
     {
       image:
-        "https://framerusercontent.com/images/7OlTS9bUugS0TvKPAt5a77nsa6k.png",
+        "/images/social-media-platforms/Tiktok.png",
       className: "-right-[4%] top-[31%]",
     },
     {
       image:
-        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
+        "/images/social-media-platforms/Facebook.png",
       className: "-right-[2%] bottom-[24%]",
     },
     {
       image:
-        "https://framerusercontent.com/images/MVekyQ8LsrdErSmPHObOHdYukIo.png",
+        "/images/social-media-platforms/GoogleAds.png",
       className: "right-[20%] bottom-[1%]",
     },
     {
       image:
-        "https://framerusercontent.com/images/HSCCIKwzqEj4dkYb0eaoQbP0c.png",
+        "/images/social-media-platforms/Snapchat.png",
       className: "left-[30%] -bottom-[4%]",
     },
     {
       image:
-        "https://framerusercontent.com/images/O1eC8TJfwFgqCrRducRcrawTuw.png",
+        "/images/social-media-platforms/Linkedin.png",
       className: "left-[4%] bottom-[15%]",
     },
   ];
