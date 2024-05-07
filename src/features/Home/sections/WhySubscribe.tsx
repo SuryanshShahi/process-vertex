@@ -45,7 +45,7 @@ const WhySubscribe = () => {
       className: "mx-auto relative z-10",
     },
     {
-      name: "Process",
+      name: "AIXGrow",
       description: "Hey! what can we do for you today?",
       icon: (
         <Img
@@ -60,7 +60,7 @@ const WhySubscribe = () => {
       className: "-left-10 absolute -mt-16 sm:opacity-20 opacity-0",
     },
     {
-      name: "Process",
+      name: "AIXGrow",
       description: "Sure! We will get back to you by the end of tomorrow 😉",
       icon: (
         <Img
@@ -88,33 +88,33 @@ const WhySubscribe = () => {
   ];
   const teamsData = [
     {
-      title: "Suryansh Shahi",
-      designation: "Frontend Developer",
-      image: "/images/icons/emoji1.png",
+      titl: "Aniket",
+      designation: "Founder Guy",
+      image: "/images/icons/guy1.png",
       color: "#808080",
     },
     {
-      title: "Suryansh Shahi",
-      designation: "Frontend Developer",
-      image: "/images/icons/emoji2.png",
+      title: "John Ray",
+      designation: "Technical Stuff Brain",
+      image: "/images/icons/guy2.png",
       color: "#FFFF00",
     },
     {
-      title: "Suryansh Shahi",
-      designation: "Frontend Developer",
-      image: "/images/icons/emoji3.png",
+      title: "Maria Rhode",
+      designation: "Marketing Star",
+      image: "/images/icons/girl1.png",
       color: "#008000",
     },
     {
-      title: "Suryansh Shahi",
-      designation: "Frontend Developer",
-      image: "/images/icons/emoji4.png",
+      title: "Jeffrey",
+      designation: "Creative King",
+      image: "/images/icons/guy3.png",
       color: "#0000FF",
     },
     {
-      title: "Suryansh Shahi",
-      designation: "Frontend Developer",
-      image: "/images/icons/emoji5.png",
+      title: "Cleo Jane",
+      designation: "Video Artist",
+      image: "/images/icons/girl2.png",
       color: "#FF0000",
     },
   ];

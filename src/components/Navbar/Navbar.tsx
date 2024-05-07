@@ -21,7 +21,7 @@ const Navbar = () => {
             className="object-contain"
             alt=""
           />
-          <div className="text-2xl text-black">Process</div>
+          <div className="text-2xl text-black">AIXGrow</div>
         </div>
         <div className="tabBar rounded-full items-center lg:flex hidden pl-5 pr-3 py-3 mx-auto gap-x-3">
           {["About", "Contact", "Pricing", "Testimonials"]?.map((item, idx) => (
@@ -56,7 +56,7 @@ const Navbar = () => {
               className="object-contain"
               alt=""
             />
-            <div className="text-2xl text-black">Process</div>
+            <div className="text-2xl text-black">AIXGrow</div>
             <div
               className="ml-auto text-4xl"
               onClick={() => setIsActive(false)}

@@ -2,7 +2,7 @@ import React from "react";
 import Button from "@/shared/button/Button";
 import { FaYoutube } from "react-icons/fa";
 import { MdCheckCircleOutline, MdEdit } from "react-icons/md";
-import { IoIosAttach, IoMdCheckmark } from "react-icons/io";
+import { IoIosHeartEmpty, IoIosShareAlt , IoMdCheckmark } from "react-icons/io";
 import { FaCirclePause } from "react-icons/fa6";
 import { Variants, motion } from "framer-motion";
 import StackingCard from "../components/StackingCard";
@@ -68,8 +68,8 @@ const CardAnimation = () => {
     <div className="howWeWork pt-[160px] pb-[60px]">
       <div className="container mx-auto sm:px-5 px-4 space-y-20">
         <Heading
-          title="How we work?"
-          subTitle="We streamline the design workflow by breaking down projects into bite-sized design tasks."
+          title="What We Do? "
+          subTitle="Craft your digital edge with bespoke social, content & design solutions."
         />
 
         <div className="lg:h-[3000px] h-[4000px] space-y-20">
@@ -82,12 +82,9 @@ const CardAnimation = () => {
             >
               <StackingCard
                 icon={<FaYoutube size={18} className="m-auto text-gray-500" />}
-                headerText="Subscribe"
-                title="Get instant access to unlimited design"
-                desctiption="Get instant access to unlimited design requests and revisions
-      from our top-tier design team using our monthly subscription.
-      No more wasting time hiring unreliable freelancers or locking
-      in lengthy contracts."
+                headerText="Engage"
+                title="Social Media Mastery"
+                desctiption="Maximize your reach and engagement across all major platforms—TikTok, Facebook, Instagram, and LinkedIn. Our expert team crafts compelling content and strategic campaigns that resonate with your audience, driving both awareness and conversion"
                 btnName="View Pricing"
                 rightChildren={
                   <div className="bg-black w-full h-[450px] m-auto rounded-3xl flex items-center justify-center">
@@ -95,7 +92,7 @@ const CardAnimation = () => {
                       <div className="space-y-4">
                         <div className="flex items-end">
                           <div className="pricing-text text-[64px] font-medium leading-[77px]">
-                            $1,899
+                              $1,899
                           </div>
                           <span className="text-white">/ monthly</span>
                         </div>
@@ -123,15 +120,15 @@ const CardAnimation = () => {
                 icon={
                   <IoMdCheckmark size={18} className="m-auto text-gray-500" />
                 }
-                headerText="Request"
-                title="Add as many design requests as needed"
-                desctiption="Add as many design requests to your queue as necessary. We will work on them sequentially, one by one. Usually, the majority of requests are fulfilled within 48 hours, sometimes even quicker, depending on the plan."
+                headerText="Organize"
+                title="Content That Connects"
+                desctiption="Efficiently manage and optimize your content. From blog posts to online guides, we ensure your content is impactful, SEO-friendly, and perfectly aligned with your brand’s voice. Our streamlined process ensures your message is clear and engaging"
                 leftChildren={
                   <div className="gap-y-[10px]">
                     {[
-                      "Unlimited requests",
-                      "One or two requests at a time",
-                      "48 hours turnaround per request",
+                      "Unlimited content adjustments",
+                      "Real-time analytics tracking",
+                      "SEO optimization for all posts",
                     ]?.map((item, idx) => (
                       <div className="flex items-center gap-x-3" key={idx}>
                         <MdCheckCircleOutline className="bg-green-100 rounded-full text-green-400" />
@@ -154,7 +151,7 @@ const CardAnimation = () => {
                         Design
                       </div>
                       <div>
-                        <div className="">Create 3 social media posts</div>
+                        <div className="">Curate 5 blog posts for upcoming campaign</div>
                         <div className="text-[#87868a]">
                           Showcase Arrival's features
                         </div>
@@ -178,7 +175,10 @@ const CardAnimation = () => {
                           <BiComment size={12} className="text-[#adacb0]" />6
                         </div>
                         <div className="text-sm text-[#87868a] flex items-center gap-x-1">
-                          <IoIosAttach size={12} className="text-[#adacb0]" />2
+                          <IoIosHeartEmpty size={12} className="text-[#adacb0]" />2
+                        </div>
+                        <div className="text-sm text-[#87868a] flex items-center gap-x-1">
+                          <IoIosShareAlt size={12} className="text-[#adacb0]" />2
                         </div>
                         <ImageCard
                           className="!h-[30px] ml-auto !w-[30px]"
@@ -218,9 +218,9 @@ const CardAnimation = () => {
             >
               <StackingCard
                 icon={<MdEdit size={18} className="m-auto text-gray-500" />}
-                headerText="Revise"
-                title="Revise until you're 100% satisfied"
-                desctiption="Say goodbye to additional charges for revisions – we're committed to refining the designs until you're completely satisfied."
+                headerText="Design"
+                title="Stunning Web Experiences"
+                desctiption="Create visually appealing and user-friendly websites that captivate and convert. Our UI/UX designs are tailored to provide an intuitive user experience, encouraging longer engagement and driving better results"
                 rightChildren={
                   <div className="bg-neutral-200 h-[450px] m-auto md:w-full rounded-3xl maskImage w-[calc(100vw-100px)]">
                     <Slider {...SLICK_SETTING} speed={8000} className="mt-12">
@@ -246,9 +246,9 @@ const CardAnimation = () => {
                 icon={
                   <FaCirclePause size={18} className="m-auto text-gray-500" />
                 }
-                headerText="Pause or cancel"
-                title="Pause or cancel anytime"
-                desctiption="The flexibility of our service sets Process apart as an exceptional design partner. Choose to maintain your subscription to meet ongoing design needs, or simply cancel when your design requirements are fulfilled."
+                headerText="Grow  "
+                title="Accelerate Your Growth"
+                desctiption="Utilize cutting-edge growth marketing techniques to scale your business quickly and sustainably. We focus on data-driven strategies and innovative approaches to increase your market share and enhance customer engagement."
                 rightChildren={
                   <div className="px-8 pt-8 overflow-hidden relative max-h-[450px] mx-auto w-full bg-[linear-gradient(180deg,#e8deff_0%,rgb(250,245,255)_60%,rgb(253,247,255)_99%)] rounded-3xl">
                     <motion.div

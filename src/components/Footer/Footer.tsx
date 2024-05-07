@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="md:flex justify-between gap-y-[10px] space-y-10">
           <div className="space-y-5 md:max-w-[300px]">
             <div className="space-y-[10px]">
-              <div className="text-lg">Sign up to Process</div>
+              <div className="text-lg">Sign up to AIXGrow</div>
               <p className="text-neutral-400">
                 Your design partner to facilitate your growth journey.
               </p>
@@ -47,7 +47,7 @@ const Footer = () => {
           <div className="text-white text-xs md:flex-row flex-col flex gap-3">
             <div> Design by Dk</div>
             <ul className="text-[#646464] gap-3 md:flex-row flex-col flex">
-              <li>&copy; 2024 Process</li>
+              <li>&copy; 2024 AIXGrow</li>
               <li>All rights reserved</li>
               <li>Terms of Service </li>
               <li>Built in Framer</li>

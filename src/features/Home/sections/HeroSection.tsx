@@ -61,8 +61,7 @@ const HeroSection = () => {
         custom={{ delay: 2, duration: 0.4}}
         className="text-[#87868a] text-lg max-w-[450px]"
       >
-        Get instant access to unlimited design requests and revisions from a
-        top-tier creative team for a flat monthly fee. Pause or cancel anytime.
+        Experience exponential growth with our data-driven strategies that amplify your message
       </motion.p>
       <motion.div
         viewport={{ once: false }}
@@ -72,8 +71,7 @@ const HeroSection = () => {
         custom={{ delay: 3, duration: 0.4}}
         className="gap-x-2 flex items-center text-[#646464] text-sm"
       >
-        <div className="bg-[#09e884] h-2 w-2 rounded-full animate-ping" />2
-        spots available
+        <div className="bg-[#09e884] h-2 w-2 rounded-full animate-ping" />Exclusive Access
         <CiStopwatch size={18} />
       </motion.div>
       <motion.div
@@ -84,9 +82,10 @@ const HeroSection = () => {
         custom={{ delay: 4, duration: 0.4}}
         className="flex gap-x-4"
       >
+        <a href="#Pricing">
         <Button className="border hover:border-gray-100 hover:bg-transparent text-white hover:!text-black">
           View Pricing
-        </Button>
+        </Button></a>
 
         <a href="#Contact">
           <Button className="bg-transparent hover:!text-white !text-black border border-gray-100">
