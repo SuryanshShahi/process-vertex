@@ -14,9 +14,9 @@ const CalendlyEmbed = ({ url }: { url: string }) => {
   }, []);
 
   return (
-    <div className="mt-20 sm:space-y-0 space-y-10">
+    <div className="mt-20 sm:space-y-0 space-y-10 font-medium">
       <Heading
-        title="Get in Touch."
+        title="Get in Touch. "
         subTitle="Partner with us
         and watch your business Grow!"
         className="!text-black"

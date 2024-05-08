@@ -5,30 +5,36 @@ import OurPricing from "./sections/OurPricing";
 import Integration from "./sections/Integration";
 import Testimonials from "./sections/Testimonials";
 import HeroSection from "./sections/HeroSection";
-import { SLICK_SETTING, SLICK_SETTING_HERO } from "@/utils/constant";
+import { SLICK_SETTING_HERO } from "@/utils/constant";
 import Slider from "react-slick";
-import ProductCard from "./components/ProductCard";
 import Img from "@/shared/Img";
-import { HeroVariants } from "@/utils/framer";
-import { motion } from "framer-motion";
 const Home = () => {
   return (
     <div className="space-y-20">
       <div className="container mx-auto px-5">
         <HeroSection />
       </div>
+
       <Slider
         {...SLICK_SETTING_HERO}
         speed={10000}
         className="mt-12 sm:max-h-[590px] max-h-[490px] maskImage"
       >
         {[
-          "/images/slide1.jpg",
-          "/images/slide2.png",
-          "/images/slide3.jpg",
-          "/images/slide4.png",
-          "/images/slide5.jpg",
-          "/images/slide6.png",
+          "/images/work/project (1).jpg",
+          "/images/work/project (1).png",
+          "/images/work/project (2).jpg",
+          "/images/work/project (2).png",
+          "/images/work/project (3).jpg",
+          "/images/work/project (3).png",
+          "/images/work/project (4).jpg",
+          "/images/work/project (4).png",
+          "/images/work/project (5).png",
+          "/images/work/project (6).png",
+          "/images/work/project (7).png",
+          "/images/work/project (8).png",
+          "/images/work/project (10).png",
+          "/images/work/project (11).png",
         ]?.map((item, idx) => (
           <Img
             key={idx}
@@ -41,6 +47,7 @@ const Home = () => {
           />
         ))}
       </Slider>
+
       <CardAnimation />
       <Integration />
       <div className="container mx-auto space-y-20 px-5">

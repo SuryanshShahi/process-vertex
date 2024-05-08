@@ -33,7 +33,7 @@ const StackingCard = ({
             </div>
             <div className="text-lg  text-[#717073]">{headerText}</div>
           </div>
-          <div className="text-4xl leading-[120%]">{title}</div>
+          <div className="text-5xl leading-[120%]">{title}</div>
           <p className=" text-[#87868a] leading-6">{desctiption}</p>
           {btnName && <Button>{btnName}</Button>}
           {leftChildren}
