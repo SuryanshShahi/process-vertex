@@ -19,7 +19,7 @@ const Home = () => {
         {...SLICK_SETTING_HERO}
         speed={10000}
         className="mt-12 sm:max-h-[590px] max-h-[490px] maskImage"
-      >
+      > 
         {[
           "/images/work/project (1).jpg",
           "/images/work/project (1).png",
