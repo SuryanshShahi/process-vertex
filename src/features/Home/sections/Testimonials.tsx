@@ -1,4 +1,3 @@
-import Img from "@/shared/Img";
 import {
   SLICK_VERTICAL_SETTING,
   SLICK_VERTICAL_SETTING2,
@@ -9,6 +8,80 @@ import TestimonialCard from "../components/TestimonialCard";
 import { FaRegComment } from "react-icons/fa";
 
 const Testimonials = () => {
+  const slider1 = [
+    {
+      title: "Tiana Roses",
+      description:
+        "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
+      image:
+        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
+    },
+    {
+      title: "Tiana Roses",
+      description:
+        "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
+      image:
+        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
+    },
+    {
+      title: "Tiana Roses",
+      description:
+        "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
+      image:
+        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
+    },
+    {
+      title: "Tiana Roses",
+      description:
+        "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
+      image:
+        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
+    },
+    {
+      title: "Tiana Roses",
+      description:
+        "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
+      image:
+        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
+    },
+  ];
+  const slider2 = [
+    {
+      title: "Tiana Roses",
+      description:
+        "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
+      image:
+        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
+    },
+    {
+      title: "Tiana Roses",
+      description:
+        "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
+      image:
+        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
+    },
+    {
+      title: "Tiana Roses",
+      description:
+        "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
+      image:
+        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
+    },
+    {
+      title: "Tiana Roses",
+      description:
+        "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
+      image:
+        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
+    },
+    {
+      title: "Tiana Roses",
+      description:
+        "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
+      image:
+        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
+    },
+  ];
   return (
     <div className="relative" id="Testimonials">
       <div className="bubble h-[800px] w-screen absolute opacity-80" />
@@ -24,8 +97,8 @@ const Testimonials = () => {
           </div>
           <div className="py-10 md:px-5 md:max-w-full max-w-[520px] mx-auto maskImageVertical mt-10 md:h-screen text-white grid lg:gap-0 gap-6 md:grid-cols-2">
             <Slider {...SLICK_VERTICAL_SETTING} speed={8000}>
-              {[1, 1, 1, 1, 1]?.map((item, idx) => (
-                <TestimonialCard />
+              {slider1?.map((item, idx) => (
+                <TestimonialCard data={item} key={idx} />
               ))}
             </Slider>
             <Slider
@@ -33,8 +106,8 @@ const Testimonials = () => {
               speed={8000}
               className="md:!block !hidden"
             >
-              {[1, 1, 1, 1, 1]?.map((item, idx) => (
-                <TestimonialCard />
+              {slider2?.map((item, idx) => (
+                <TestimonialCard data={item} key={idx} />
               ))}
             </Slider>
           </div>

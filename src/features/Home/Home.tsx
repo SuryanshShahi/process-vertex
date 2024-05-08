@@ -17,38 +17,30 @@ const Home = () => {
       <div className="container mx-auto px-5">
         <HeroSection />
       </div>
-      <motion.div
-        viewport={{ once: false }}
-        variants={HeroVariants.CARD}
-        whileInView="show"
-        initial="hidden"
-        custom={{ duration: 0.5 }}
+      <Slider
+        {...SLICK_SETTING_HERO}
+        speed={10000}
+        className="mt-12 sm:max-h-[590px] max-h-[490px] maskImage"
       >
-        <Slider
-          {...SLICK_SETTING_HERO}
-          speed={10000}
-          className="mt-12 sm:max-h-[590px] max-h-[490px] maskImage"
-        >
-          {[
-            "/images/slide1.jpg",
-            "/images/slide2.png",
-            "/images/slide3.jpg",
-            "/images/slide4.png",
-            "/images/slide5.jpg",
-            "/images/slide6.png",
-          ]?.map((item, idx) => (
-            <Img
-              key={idx}
-              src={item}
-              height={550}
-              width={880}
-              alt=""
-              isLocal
-              className="sm:h-[550px] h-[450px] object-cover w-[880px] rounded-2xl shadow-lg shadow-neutral-300"
-            />
-          ))}
-        </Slider>
-      </motion.div>
+        {[
+          "/images/slide1.jpg",
+          "/images/slide2.png",
+          "/images/slide3.jpg",
+          "/images/slide4.png",
+          "/images/slide5.jpg",
+          "/images/slide6.png",
+        ]?.map((item, idx) => (
+          <Img
+            key={idx}
+            src={item}
+            height={550}
+            width={880}
+            alt=""
+            isLocal
+            className="sm:h-[550px] h-[450px] object-cover w-[880px] rounded-2xl shadow-lg shadow-neutral-300"
+          />
+        ))}
+      </Slider>
       <CardAnimation />
       <Integration />
       <div className="container mx-auto space-y-20 px-5">
