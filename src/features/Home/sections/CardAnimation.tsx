@@ -183,7 +183,7 @@ const CardAnimation = () => {
                         <ImageCard
                           className="!h-[30px] ml-auto !w-[30px]"
                           color="#ff0000"
-                          image="/images/icons/emoji1.png"
+                          image="/images/icons/girl1.png"
                           height={24}
                           weight={24}
                         />
@@ -262,7 +262,7 @@ const CardAnimation = () => {
                       <ImageCard
                         className="!h-[80px] !w-[80px]"
                         color="#808080"
-                        image="/images/icons/emoji2.png"
+                        image="/images/icons/girl2.png"
                         height={68}
                         weight={68}
                       />
@@ -297,7 +297,7 @@ const CardAnimation = () => {
                       <ImageCard
                         className="!h-[80px] !w-[80px]"
                         color="#FFFF00"
-                        image="/images/icons/emoji3.png"
+                        image="/images/icons/girl3.png"
                         height={68}
                         weight={68}
                       />
@@ -313,7 +313,7 @@ const CardAnimation = () => {
                       <ImageCard
                         className="!h-[80px] !w-[80px]"
                         color="#ff0000"
-                        image="/images/icons/emoji4.png"
+                        image="/images/icons/girl4.png"
                         height={68}
                         weight={68}
                       />
