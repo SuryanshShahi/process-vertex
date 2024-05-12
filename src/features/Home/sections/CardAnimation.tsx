@@ -104,7 +104,7 @@ const CardAnimation = () => {
                         Subscribe Now
                       </Button>
                     </div> */}
-                    <video src="/social-media-video.mp4"  className="h-[420px] w-[420px]" autoPlay muted loop={true}>
+                    <video src="/social-media-video.mp4"  className="p-4" autoPlay muted loop={true}>
                     </video>
                   </div>
                 }

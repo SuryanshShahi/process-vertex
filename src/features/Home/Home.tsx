@@ -22,19 +22,11 @@ const Home = () => {
       > 
         {[
           "/images/work/project (1).jpg",
-          "/images/work/project (1).png",
-          "/images/work/project (2).jpg",
-          "/images/work/project (2).png",
-          "/images/work/project (3).jpg",
           "/images/work/project (3).png",
-          "/images/work/project (4).jpg",
-          "/images/work/project (4).png",
-          "/images/work/project (5).png",
-          "/images/work/project (6).png",
+          
           "/images/work/project (7).png",
-          "/images/work/project (8).png",
           "/images/work/project (10).png",
-          "/images/work/project (11).png",
+          
         ]?.map((item, idx) => (
           <Img
             key={idx}

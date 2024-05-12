@@ -15,6 +15,10 @@ const Testimonials = () => {
         "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
       image:
         "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
+      views: "6",
+      likes: "10",
+      comments: "100",
+      shares: "18"
     },
     {
       title: "Tiana Roses",
@@ -22,6 +26,10 @@ const Testimonials = () => {
         "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
       image:
         "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
+      views: "6",
+      likes: "10",
+      comments: "100",
+      shares: "18"
     },
     {
       title: "Tiana Roses",
@@ -29,21 +37,11 @@ const Testimonials = () => {
         "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
       image:
         "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
-    },
-    {
-      title: "Tiana Roses",
-      description:
-        "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
-      image:
-        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
-    },
-    {
-      title: "Tiana Roses",
-      description:
-        "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
-      image:
-        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
-    },
+      views: "6",
+      likes: "10",
+      comments: "100",
+      shares: "18"
+    }
   ];
   const slider2 = [
     {
@@ -52,6 +50,10 @@ const Testimonials = () => {
         "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
       image:
         "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
+      views: "6",
+      likes: "10",
+      comments: "100",
+      shares: "18"
     },
     {
       title: "Tiana Roses",
@@ -59,6 +61,10 @@ const Testimonials = () => {
         "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
       image:
         "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
+      views: "6",
+      likes: "10",
+      comments: "100",
+      shares: "18"
     },
     {
       title: "Tiana Roses",
@@ -66,21 +72,11 @@ const Testimonials = () => {
         "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
       image:
         "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
-    },
-    {
-      title: "Tiana Roses",
-      description:
-        "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
-      image:
-        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
-    },
-    {
-      title: "Tiana Roses",
-      description:
-        "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
-      image:
-        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
-    },
+      views: "6",
+      likes: "10",
+      comments: "100",
+      shares: "18"
+    }
   ];
   return (
     <div className="relative" id="Testimonials">
@@ -93,7 +89,7 @@ const Testimonials = () => {
             <div className="font-bold">Testimonials</div>
           </div>
           <div className="text-5xl font-bold mt-8 text-center text-white">
-            They love AIXGrow
+            Our Client's Numbers Talk
           </div>
           <div className="py-10 md:px-5 md:max-w-full max-w-[520px] mx-auto maskImageVertical mt-10 md:h-screen text-white grid lg:gap-0 gap-6 md:grid-cols-2">
             <Slider {...SLICK_VERTICAL_SETTING} speed={8000}>
