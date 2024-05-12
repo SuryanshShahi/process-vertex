@@ -73,7 +73,7 @@ const CardAnimation = () => {
         />
 
         <div className="lg:h-[3000px] h-[4000px] space-y-20">
-          <div className="md:top-[20%] sm:top-[10%] top-[6%] sticky">
+          <div className="md:top-[20%] top-[10%] sticky">
             <motion.div
               viewport={{ once: false, amount: 0.1 }}
               variants={HeroVariants.STACKING_CARD}
@@ -88,8 +88,8 @@ const CardAnimation = () => {
                 btnName="View Pricing"
                 rightChildren={
                   <div className="bg-black w-full h-[450px] m-auto rounded-3xl flex items-center justify-center">
-                    <div className="max-w-[300px] space-y-10">
-                      <div className="space-y-4">
+                    {/* <div className="max-w-[300px] space-y-10"> */}
+                      {/* <div className="space-y-4">
                         <div className="flex items-end">
                           <div className="pricing-text text-[64px] font-medium leading-[77px]">
                               $1,899
@@ -103,13 +103,15 @@ const CardAnimation = () => {
                       <Button className="bg-neutral-800 py-3 w-full text-white">
                         Subscribe Now
                       </Button>
-                    </div>
+                    </div> */}
+                    <video src="/social-media-video.mp4"  className="h-[420px] w-[420px]" autoPlay muted loop={true}>
+                    </video>
                   </div>
                 }
               />
             </motion.div>
           </div>
-          <div className="md:top-[25%] sm:top-[15%] top-[6%] sticky">
+          <div className="md:top-[25%] top-[15%] sticky">
             <motion.div
               viewport={{ once: false, amount: 0.1 }}
               variants={HeroVariants.STACKING_CARD}
@@ -209,7 +211,7 @@ const CardAnimation = () => {
               />
             </motion.div>
           </div>
-          <div className="md:top-[30%] sm:top-[20%] top-[6%] sticky customSliderSetting">
+          <div className="md:top-[30%] top-[20%] sticky customSliderSetting">
             <motion.div
               viewport={{ once: false, amount: 0.1 }}
               variants={HeroVariants.STACKING_CARD}
@@ -222,20 +224,23 @@ const CardAnimation = () => {
                 title="Stunning Web Experiences"
                 desctiption="Create visually appealing and user-friendly websites that captivate and convert. Our UI/UX designs are tailored to provide an intuitive user experience, encouraging longer engagement and driving better results"
                 rightChildren={
-                  <div className="bg-neutral-200 h-[450px] m-auto md:w-full rounded-3xl maskImage w-[calc(100vw-100px)]">
-                    <Slider {...SLICK_SETTING} speed={8000} className="mt-12">
+                  // <div className="bg-neutral-200 h-[450px] m-auto md:w-full rounded-3xl maskImage w-[calc(100vw-100px)]">
+                  <div className="bg-[#432575] w-full h-[450px] m-auto rounded-3xl flex items-center justify-center">
+                    {/* <Slider {...SLICK_SETTING} speed={8000} className="mt-12">
                       {["#808080", "#008000", "#0000FF", "#FF0000"]?.map(
                         (item, idx) => (
                           <ProductCard theme={item} key={idx} />
                         )
                       )}
-                    </Slider>
+                    </Slider> */}
+                    <video src="/web-experiences-video.mp4"  className="h-[400px] rounded-3xl" autoPlay muted loop={true}>
+                    </video>
                   </div>
                 }
               />
             </motion.div>
           </div>
-          <div className="md:top-[35%] sm:top-[25%] top-[6%] sticky">
+          <div className="md:top-[35%] top-[25%] sticky">
             <motion.div
               viewport={{ once: false, amount: 0.1 }}
               variants={HeroVariants.STACKING_CARD}
@@ -269,7 +274,7 @@ const CardAnimation = () => {
                     </motion.div>
                     <motion.img
                       viewport={{ once: false, amount: 0.2 }}
-                      custom={{ delay: 1 }}
+                      custom={{ delay: 0.5 }}
                       variants={StatckingCard.TOP}
                       whileInView="show"
                       initial="hidden"
