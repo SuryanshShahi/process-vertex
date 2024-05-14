@@ -2,22 +2,26 @@ import React from "react";
 import Heading from "../components/Heading";
 import { GiStarsStack } from "react-icons/gi";
 import { FaStar, FaStopwatch } from "react-icons/fa";
-import { PiLightningFill } from "react-icons/pi";
+import { PiCalendarPlusFill, PiLightningFill } from "react-icons/pi";
 import PricingCard from "../components/PricingCard";
 import { HeroVariants } from "@/utils/framer";
 import { motion } from "framer-motion";
+import Button from "@/shared/button/Button";
 
 const OurPricing = () => {
   return (
-    <div className="space-y-20 overflow-x-hidden font-medium" id="Pricing">
+    <div
+      className="space-y-20 font-medium max-[768px]:overflow-hidden"
+      id="Pricing"
+    >
       <Heading
         title="Our Pricing. "
         className="!text-black"
         subTitle="No lengthy contracts. No managing employees. No headaches."
       />
-      <div className="flex lg:flex-row flex-col justify-center gap-10">
+      <div className="flex lg:flex-row flex-wrap flex-col justify-center gap-10">
         <motion.div
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.1 }}
           variants={HeroVariants.LEFT}
           custom={{ duration: 0.4 }}
           whileInView="show"
@@ -72,7 +76,7 @@ const OurPricing = () => {
           />
         </motion.div>
         <motion.div
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.1 }}
           variants={HeroVariants.RIGHT}
           whileInView="show"
           initial="hidden"
@@ -124,6 +128,34 @@ const OurPricing = () => {
               ],
             }}
           />
+        </motion.div>
+        <motion.div
+          viewport={{ once: false, amount: 0.1 }}
+          variants={HeroVariants.CARD}
+          whileInView="show"
+          initial="hidden"
+          custom={{ duration: 0.4 }}
+          className="hover:-top-5 flex mx-auto flex-col gap-y-10 items-center top-0 max-w-[500px] relative duration-500 bg-[#fafafa] rounded-[32px] p-7 border border-[rgba(212,212,212,.6)]"
+        >
+          <div className="space-y-5 text-center">
+            <div className="text-black lg:text-2xl  sm:text-lg text-[22px]">
+              Custom project?
+            </div>
+            <div className="leading-5 sm:text-sm text-[#717073]">
+              Looking for a project with quoted fees and delivered in
+              milestones? Schedule a call with us for a thorough discussion
+              before making a decision.
+            </div>
+          </div>
+          <a href="#Contact" className="w-full">
+            <Button className="border py-[10px] w-full justify-center hover:border-gray-100 flex items-center gap-x-2 group hover:bg-transparent text-white hover:!text-black">
+              <PiCalendarPlusFill
+                className="group-hover:text-black duration-500 text-white"
+                size={14}
+              />
+              Book a Call
+            </Button>
+          </a>
         </motion.div>
       </div>
     </div>
