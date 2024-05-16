@@ -215,3 +215,18 @@
     opacity: 1;
   }
 }
+
+.marquee {
+  display: flex;
+  gap: 60px;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.marquee-group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}

@@ -19,14 +19,12 @@ const Home = () => {
         {...SLICK_SETTING_HERO}
         speed={10000}
         className="mt-12 sm:max-h-[590px] max-h-[490px] maskImage"
-      > 
+      >
         {[
           "/images/work/project (1).jpg",
           "/images/work/project (3).png",
-          
           "/images/work/project (7).png",
           "/images/work/project (10).png",
-          
         ]?.map((item, idx) => (
           <Img
             key={idx}
@@ -39,6 +37,23 @@ const Home = () => {
           />
         ))}
       </Slider>
+      <div className="marquee text-4xl font-semibold uppercase">
+        <div className="marquee-group animate-marquee">
+          <span>Branding Design</span>
+          <span>Email Marketing</span>
+          <span>Digital Product</span>
+          <span>Ui/Ux Design</span>
+          <span>Digital Studio</span>
+        </div>
+
+        <div className="marquee-group animate-marquee">
+          <span>Branding Design</span>
+          <span>Email Marketing</span>
+          <span>Digital Product</span>
+          <span>Ui/Ux Design</span>
+          <span>Digital Studio</span>
+        </div>
+      </div>
 
       <CardAnimation />
       <Integration />
