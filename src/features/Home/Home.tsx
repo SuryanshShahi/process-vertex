@@ -21,10 +21,16 @@ const Home = () => {
         className="mt-12 sm:max-h-[590px] max-h-[490px] maskImage"
       >
         {[
-          "/images/work/project (1).jpg",
-          "/images/work/project (3).png",
-          "/images/work/project (7).png",
-          "/images/work/project (10).png",
+          "https://ik.imagekit.io/designkrunch/aixgrow/project-1.png",
+          "https://ik.imagekit.io/designkrunch/aixgrow/project-2.png",
+          "https://ik.imagekit.io/designkrunch/aixgrow/project-3.png",
+          "https://ik.imagekit.io/designkrunch/aixgrow/project-4.png",
+          "https://ik.imagekit.io/designkrunch/aixgrow/project-5.png",
+          "https://ik.imagekit.io/designkrunch/aixgrow/project-6.png",
+          "https://ik.imagekit.io/designkrunch/aixgrow/project-7.png",
+          "https://ik.imagekit.io/designkrunch/aixgrow/project-8.jpg",
+          "https://ik.imagekit.io/designkrunch/aixgrow/project-9.png",
+          "https://ik.imagekit.io/designkrunch/aixgrow/project-10.png",
         ]?.map((item, idx) => (
           <Img
             key={idx}

@@ -41,7 +41,7 @@ const OurPricing = () => {
                 />
               ),
               description: "Scalable Growth for Emerging Brands",
-              price: "$1,899",
+              price: "£1,899",
               included: [
                 {
                   title: "Guaranteed Follower Growth",
@@ -92,7 +92,7 @@ const OurPricing = () => {
               rightIcon: <FaStopwatch size={12} className="text-white" />,
               headerIcon: <PiLightningFill className="text-white" size={26} />,
               description: "Accelerated Expansion for Ambitious Brands",
-              price: "$3,199",
+              price: "£3,199",
               included: [
                 {
                   title: "Enhanced Follower Growth",

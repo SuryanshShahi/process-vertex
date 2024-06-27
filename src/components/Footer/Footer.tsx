@@ -25,19 +25,18 @@ const Footer = () => {
           </div>
           <ul className="space-y-[10px] mr-20">
             {[
-              "About",
-              "Work",
-              "Contact",
-              "Pricing",
-              "Testimonials",
-              "FAQs",
-              "404",
+              { label: "About", link: "#About" },
+              { label: "Contact", link: "#Contact" },
+              { label: "Pricing", link: "#Pricing" },
+              { label: "Testimonials", link: "#Testimonials" },
             ]?.map((item, idx) => (
               <li
                 key={idx}
                 className="text-neutral-400 hover:text-white duration-500 cursor-pointer"
               >
-                {item}
+                <a href={item.link} className="block">
+                  {item.label}
+                </a>
               </li>
             ))}
           </ul>
@@ -49,13 +48,24 @@ const Footer = () => {
             <ul className="text-[#646464] gap-3 md:flex-row flex-col flex">
               <li>&copy; 2024 AIXGrow</li>
               <li>All rights reserved</li>
-              <li>Terms of Service </li>
-              <li>Built in Framer</li>
+              <li>All images are for demo purpose only</li>
             </ul>
           </div>
           <div className="flex gap-x-3">
-            <AiFillInstagram className="text-white hover:rotate-[360deg] duration-500 cursor-pointer" size={20} />
-            <FaTwitter className="text-white hover:rotate-[360deg] duration-500 cursor-pointer" size={20} />
+            <a
+              href="https://www.instagram.com/aixgrow/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiFillInstagram
+                className="text-white hover:rotate-[360deg] duration-500 cursor-pointer"
+                size={30}
+              />
+            </a>
+            {/* <FaTwitter
+              className="text-white hover:rotate-[360deg] duration-500 cursor-pointer"
+              size={20}
+            /> */}
           </div>
         </div>
       </div>

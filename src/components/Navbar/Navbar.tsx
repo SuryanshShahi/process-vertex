@@ -14,9 +14,9 @@ const Navbar = () => {
       <div className="flex md:p-10 p-5 items-center sticky top-0 z-20">
         <div className="flex gap-x-3 items-center">
           <Img
-            height={32}
-            width={32}
-            src="/images/icons/logo.webp"
+            height={40}
+            width={40}
+            src="/images/icons/logo.png"
             isLocal
             className="object-contain"
             alt=""
@@ -51,7 +51,7 @@ const Navbar = () => {
             <Img
               height={32}
               width={32}
-              src="/images/icons/logo.webp"
+              src="/images/icons/logo.png"
               isLocal
               className="object-contain"
               alt=""

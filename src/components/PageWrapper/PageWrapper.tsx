@@ -112,7 +112,7 @@ const PageWrapper: FC<PropsWithChildren<IPageWraps>> = ({
           ></div>
         )}
         <div id="Contact">
-          <CalendlyEmbed url="https://calendly.com/designkrunch/30min" />
+          <CalendlyEmbed url="https://calendly.com/officialaniketsingh1/30min" />
         </div>
         <Footer />
       </div>

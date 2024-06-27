@@ -3,8 +3,9 @@ export const SLICK_SETTING_HERO = {
   slidesToScroll: 1,
   infinite: true,
   autoplay: true,
-  autoplaySpeed: 0,
-  speed: 10000,
+  autoplaySpeed: 5000,  // Set a non-zero value
+  speed: 10000,  // Keep this high for slow transition
+  pauseOnHover: false,  // Disable pause on hover
   cssEase: "linear",
   arrows: false,
   responsive: [
@@ -28,6 +29,7 @@ export const SLICK_SETTING_HERO = {
     },
   ],
 };
+
 
 export const SLICK_SETTING = {
   slidesToShow: 3,

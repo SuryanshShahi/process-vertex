@@ -66,7 +66,7 @@ const CardAnimation = () => {
 
   return (
     <div className="howWeWork pt-[160px] pb-[60px]">
-      <div className="container mx-auto sm:px-5 px-4 space-y-20">
+      <div className="container mx-auto sm:px-5 px-4 space-y-20" id="About">
         <Heading
           title="What We Do? "
           subTitle="Craft your digital edge with bespoke social, content & design solutions."

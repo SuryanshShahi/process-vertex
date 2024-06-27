@@ -14,70 +14,74 @@ const Testimonials = () => {
       description:
         "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
       image:
-        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
-      views: "6",
-      likes: "10",
-      comments: "100",
-      shares: "18"
+        "/images/icons/image.png",
+      views: "6.5M",
+      likes: "10.3K",
+      comments: "100.5K",
+      shares: "18.2K"
     },
     {
-      title: "Tiana Roses",
+      title: "Michael Berry",
       description:
-        "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
+        "Our sales increased by 30% after using AIXGrow. The new design attracted more customers and the site navigation is a breeze!",
       image:
-        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
-      views: "6",
-      likes: "10",
-      comments: "100",
-      shares: "18"
+        "/images/icons/image-1.png",
+      views: "15.2M",
+      likes: "25.6K",
+      comments: "200.8K",
+      shares: "30.4K"
     },
     {
-      title: "Tiana Roses",
+      title: "Sarah Johnson",
       description:
-        "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
+        "AIXGrow has truly elevated our online presence. The team was professional, responsive, and incredibly talented. Highly recommend!",
       image:
-        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
-      views: "6",
-      likes: "10",
-      comments: "100",
-      shares: "18"
+        "/images/icons/image-2.png",
+      views: "20.1M",
+      likes: "35.2K",
+      comments: "150.3K",
+      shares: "40.7K"
     }
   ];
+  
   const slider2 = [
     {
-      title: "Tiana Roses",
+      title: "David Wilson",
       description:
-        "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
+        "Thanks to AIXGrow, our social media reach has expanded significantly. Their SMM strategies have increased our follower base by 50% in just two months!",
       image:
-        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
-      views: "6",
-      likes: "10",
-      comments: "100",
-      shares: "18"
+        "/images/icons/image-3.png",
+      views: "8.8M",
+      likes: "12.4K",
+      comments: "110.6K",
+      shares: "22.3K"
     },
     {
-      title: "Tiana Roses",
+      title: "Emma Brown",
       description:
-        "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
+        "AIXGrow's social media campaigns have been instrumental in boosting our brand awareness. Engagements have skyrocketed, thanks to their creative content and targeted ads!",
       image:
-        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
-      views: "6",
-      likes: "10",
-      comments: "100",
-      shares: "18"
+        "/images/icons/image-4.png",
+      views: "10.5M",
+      likes: "18.1K",
+      comments: "90.9K",
+      shares: "15.5K"
     },
     {
-      title: "Tiana Roses",
+      title: "Lucas Green",
       description:
-        "Redesigning our website with AIXGrow has been a game-changer! The transformation is unbelievable – not only is it user-friendly, but the visual appeal is off the charts. Absolutely wowed by the results!",
+        "The integrated approach by AIXGrow has transformed both our website and social media presence. Our brand is now more visible and engaging across platforms.",
       image:
-        "https://framerusercontent.com/images/YdeRxW0UONt3yhBVmqWZsKUCZyk.png",
-      views: "6",
-      likes: "10",
-      comments: "100",
-      shares: "18"
+        "/images/icons/image-5.png",
+      views: "12.3M",
+      likes: "20.9K",
+      comments: "130.2K",
+      shares: "25.7K"
     }
   ];
+  
+  
+  
   return (
     <div className="relative" id="Testimonials">
       <div className="bubble h-[800px] w-screen absolute opacity-80" />

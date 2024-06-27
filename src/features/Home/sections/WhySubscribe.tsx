@@ -51,7 +51,7 @@ const WhySubscribe = () => {
         <Img
           height={48}
           width={48}
-          src="/images/icons/logo.webp"
+          src="/images/icons/logo.png"
           isLocal
           className="object-contain -mt-2"
           alt=""
@@ -66,7 +66,7 @@ const WhySubscribe = () => {
         <Img
           height={48}
           width={48}
-          src="/images/icons/logo.webp"
+          src="/images/icons/logo.png"
           isLocal
           className="object-contain -mt-2"
           alt=""
@@ -88,10 +88,16 @@ const WhySubscribe = () => {
   ];
   const teamsData = [
     {
-      titl: "Aniket",
-      designation: "Founder Guy",
+      title: "Aniket",
+      designation: "The Main Guy",
       image: "/images/icons/guy1.png",
       color: "#808080",
+    },
+    {
+      title: "Nakul",
+      designation: "The Main Guy",
+      image: "/images/icons/guy1.png",
+      color: "#6EB6FF",
     },
     {
       title: "John Ray",
