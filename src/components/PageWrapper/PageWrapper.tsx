@@ -32,7 +32,7 @@ const PageWrapper: FC<PropsWithChildren<IPageWraps>> = ({
   return (
     <Fragment>
       <Head>
-        <script
+        {/* <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${GTM_ID}`}
         ></script>
@@ -45,7 +45,7 @@ const PageWrapper: FC<PropsWithChildren<IPageWraps>> = ({
                       page_path: window.location.pathname,
                     })`,
           }}
-        />
+        /> */}
         {/* <GoogleTagManager gtmId={GTM_ID || ""} /> */}
         <title>{seo?.metaTitle ?? metaContent.TITLE}</title>
         <meta
@@ -87,7 +87,7 @@ const PageWrapper: FC<PropsWithChildren<IPageWraps>> = ({
         <link
           rel="mask-icon"
           href="favicon/safari-pinned-tab.svg"
-          color="#FFC40D"
+          color="#000000"
         />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
